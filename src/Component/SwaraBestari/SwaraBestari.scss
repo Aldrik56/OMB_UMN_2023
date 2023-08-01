@@ -1,0 +1,300 @@
+.SwaraBestari {
+    position: relative;
+    display: flex;
+    padding: 15vw 10% 10vw;
+    // z-index:-1;
+    background-color: var(--omb-white);
+
+    .SB-kiri {
+        width: 35%;
+        height: 100%;
+        margin: auto auto;
+        z-index: 5;
+    } 
+    
+    .SB-kanan {
+        width: 45%;
+        height: 100%;
+        margin: auto auto;
+        padding-left: 6vw;
+        padding-right: 6vw;
+        z-index: 5;
+    }
+
+    .circle-atas {
+        width: 5vw;
+        margin: 0 0 0 -10%;
+    }
+
+    .circle-bawah {
+        width: 5vw;
+        margin: 0 0 0 90%;
+    }
+
+    .SB-logo {
+        display: block;
+        width: 20vw;
+        margin: 3vw auto;
+    }
+
+    .SB-kanan > p {
+        font-family: "Proxima_nova";
+        color: #E4D0C1;
+    }
+
+    .SB-kanan > a {
+        background-image: linear-gradient(to bottom, #4B355C, #591A2D);
+        color: #E1E8EA;
+        border: 0;
+        border-radius: 50px;
+        padding: 1vw 1.5vw;
+        font-family: "Proxima_nova_bold";
+        font-size: 1.5vw;
+        box-shadow: 0px 0px 21px -3px #E1E8EA,8px 8px 14px 0px #591A2D;
+        margin-top: 1vw;
+        text-decoration: none;
+    }
+
+    .background {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 5%;
+        left: 0%;
+        z-index: 4;
+    }
+
+    .background-mobile {
+        display: none;
+    }
+
+    .wave1 {
+        position: absolute;
+        width: 100%;
+        top: -17%;
+        left: 0;
+        z-index: 3;
+    }
+
+    .wave2 {
+        position: absolute;
+        width: 100%;
+        top: 2%;
+        left: 0;
+        z-index: 2;
+    }
+
+    .wave3 {
+        position: absolute;
+        width: 100%;
+        top: 0%;
+        left: 0;
+    }
+
+    .petir-kiri {
+        position: absolute;
+        width: 15vw;
+        top: 40%;
+        left: -3%;
+        z-index: 5;
+    }
+    
+    .petir-kanan {
+        position: absolute;
+        width: 15vw;
+        top: 10%;
+        left: 88%;
+        z-index: 5;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .SwaraBestari {
+        position: relative;
+        display: flex;
+        padding: 12vw 10% 10vw;
+
+        .SB-kanan {
+            width: 45%;
+            height: 100%;
+            margin: auto auto;
+            padding-left: 5vw;
+            padding-right: 5vw;
+            z-index: 5;
+        }
+
+        .background {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 5%;
+            left: 0%;
+            z-index: 4;
+        }
+
+        .wave1 {
+            position: absolute;
+            width: 100%;
+            top: -22%;
+            left: 0;
+            z-index: 3;
+        }
+    }
+}
+
+@media screen and (max-width: 1300px) {
+    .SwaraBestari {
+        position: relative;
+        display: flex;
+        padding: 15vw 10% 10vw;
+
+        .SB-kiri {
+            width: 30%;
+            height: 100%;
+            margin: auto auto;
+            z-index: 5;
+        } 
+
+        .SB-kanan {
+            width: 50%;
+            height: 100%;
+            margin: auto auto;
+            padding-left: 3vw;
+            padding-right: 3vw;
+            z-index: 5;
+        }
+
+        .background {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 5%;
+            left: 0%;
+            z-index: 4;
+        }
+
+        .wave1 {
+            position: absolute;
+            width: 100%;
+            top: -22%;
+            left: 0;
+            z-index: 3;
+        }
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .SwaraBestari {
+        position: relative;
+        display: flex;
+        padding: 15.5vw 10% 10vw;
+
+        .circle-atas {
+            width: 4vw;
+            margin: 0 0 0 -10%;
+        }
+    
+        .circle-bawah {
+            width: 4vw;
+            margin: 0 0 0 90%;
+        }
+    
+        .SB-logo {
+            display: block;
+            width: 18vw;
+            margin: 3vw auto;
+        }
+
+        .SB-kanan > p {
+            font-family: "Proxima_nova";
+            color: #E4D0C1;
+            font-size: 1.4vw;
+        }
+        
+        .wave3 {
+            position: absolute;
+            width: 100%;
+            top: -3%;
+            left: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .SwaraBestari {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        padding: 15.5vw 0 10vw;
+
+        .SB-kiri {
+            height: 100%;
+            margin: auto auto;
+            z-index: 5;
+        } 
+
+        .SB-kanan {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin-top: 2vw;
+            z-index: 5;
+            width:80vw;
+        }
+        
+        .circle-atas {
+            width: 4vw;
+            margin: 0 0 -25% -10%;
+        }
+    
+        .circle-bawah {
+            width: 4vw;
+            margin: -25% 0 0 90%;
+        }
+        
+        .SB-logo {
+            display: block;
+            width: 20vw;
+            margin: 0 auto;
+        }
+
+        .SB-kanan > p {
+            font-family: "Proxima_nova";
+            color: #E4D0C1;
+            font-size: 2.2vw;
+            text-align: center;
+        }
+
+        .SB-kanan > a {
+            background-image: linear-gradient(to bottom, #4B355C, #591A2D);
+            color: #E1E8EA;
+            border: 0;
+            border-radius: 50px;
+            padding: 2vw 3vw;
+            font-family: "Proxima_nova_bold";
+            font-size: 3.5vw;
+            box-shadow: 0px 0px 21px -3px #E1E8EA,8px 8px 14px 0px #591A2D;
+            margin-top: 1vw;
+        }
+
+        .background {
+            display: none;
+        }
+        
+        .background-mobile {
+            display: block !important;
+            position: absolute;
+            width: 100%;
+            // height: 80%;
+            top: -20%;
+            left: 0%;
+            z-index: 4;
+        }
+        
+        .wave1, .wave2, .wave3, .petir-kiri, .petir-kanan {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,376 @@
+@font-face {
+    font-family: "Proxima_nova";
+    src: url("../../fonts/Proxima Nova Font.otf");
+}
+
+@font-face {
+    font-family: "Proxima_nova_bold";
+    src: url("../../fonts/Proxima Nova Bold.otf");
+}
+
+@font-face {
+    font-family: "Proxima_nova_thin";
+    src: url("../../fonts/Proxima Nova Thin.otf");
+}
+
+@font-face {
+    font-family: "Proxima_nova_extrabold";
+    src: url("../../fonts/Proxima\ Nova\ Extrabold.otf");
+}
+
+
+
+.wrapper {
+    background: #E1E8EA;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    overflow: hidden;
+    font-family: "Proxima_nova";
+    position: relative;
+
+    .putik {
+        position: absolute;
+        left: -25px;
+        top: 90px;
+        width: 80%;
+    }
+
+    .daun {
+        position: absolute;
+        bottom: -20px;
+        right: 5px;
+        height: 40%;
+    }
+
+    .break {
+        color: var(--deep-sea-blue, #005683);
+        text-align: center;
+        margin: 1rem;
+    }
+
+    .content {
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 1rem;
+        background-color: rgba(255, 255, 255, 0.50);
+        filter: drop-shadow(5px 5px 4px rgba(0, 0, 0, 0.25));
+        /* box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25); */
+        backdrop-filter: blur(11px);
+        margin-left: 1rem;
+        margin-right: 1rem;
+        margin-top: 0.5rem;
+        border: double 2px transparent;
+        border-radius: 15px;
+        background-image: linear-gradient(white, white), radial-gradient(circle at top left, rgba(112, 131, 188) 0%, rgba(108, 189, 170) 100%);
+        background-origin: border-box;
+        background-clip: padding-box, border-box;
+    }
+
+    .number {
+        background: linear-gradient(135deg, #7083BC 0%, #6CBDAA 100%);
+        color: white;
+        font-family: "Proxima_nova_bold";
+        border-radius: 50%;
+    }
+
+    .num {
+        display: flex;
+        width: 40px;
+        height: 40px;
+        margin-bottom: 0;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .textbox {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .heading {
+        color: var(--deep-sea-blue, #005683);
+        font-family: "Proxima_nova_bold";
+        margin-bottom: 0.2rem;
+        font-size: 19.5px;
+    }
+
+    .text {
+        margin-bottom: 0;
+        color: #7083BC;
+        font-size: 12px;
+    }
+
+    @media (min-width: 375px) {
+        .putik {
+            position: absolute;
+            left: -35px;
+        }
+    }
+
+    @media (min-width: 768px) {
+        .wrapper {
+            padding-bottom: 3.5rem;
+        }
+
+        .break {
+            font-size: 16px;
+        }
+
+        .content {
+            width: 66.666667%;
+            margin: auto;
+            margin-top: 0.5rem;
+            padding-top: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-radius: 20px;
+            filter: drop-shadow(5px 5px 8px rgba(0, 0, 0, 0.25));
+        }
+
+        .putik {
+            position: absolute;
+            top: 30px;
+            width: 40%;
+        }
+
+        .daun {
+            right: 30px;
+            height: 50%;
+        }
+
+        .num {
+            width: 48px;
+            height: 48px;
+            font-size: 29px;
+        }
+
+        .heading {
+            font-size: 21px;
+        }
+
+        .text {
+            font-size: 13px;
+        }
+    }
+
+    @media (min-width: 1024px) {
+
+        padding-bottom: 4rem;
+
+
+        .break {
+            font-size: 21px;
+        }
+
+        .content {
+            padding: 2rem;
+            gap: 1.5rem;
+            border: double 3px transparent;
+            border-radius: 25px;
+            margin-top: 1rem;
+            filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.25));
+        }
+
+        .putik {
+            top: 60px;
+            width: 30%;
+        }
+
+        .daun {
+            right: 50px;
+            height: 45%;
+        }
+
+        .num {
+            width: 64px;
+            height: 64px;
+            font-size: 38px;
+        }
+
+        .heading {
+            font-size: 28px;
+        }
+
+        .text {
+            font-size: 17px;
+        }
+    }
+
+    @media (min-width: 1280px) {
+
+        padding-bottom: 4.5rem;
+
+
+        .break {
+            font-size: 26px;
+        }
+
+        .content {
+            padding: 2rem;
+            filter: drop-shadow(5px 5px 13px rgba(0, 0, 0, 0.25));
+        }
+
+        .putik {
+            top: 75px;
+            left: -50px;
+            width: 30%;
+        }
+
+        .daun {
+            right: 60px;
+            bottom: -45px;
+            height: 45%;
+        }
+
+        .num {
+            width: 80px;
+            height: 80px;
+            font-size: 48px;
+        }
+
+        .heading {
+            font-size: 34px;
+        }
+
+        .text {
+            font-size: 21px;
+        }
+    }
+
+    @media (min-width: 1440px) {
+
+        padding-bottom: 5rem;
+
+
+        .break {
+            font-size: 30px;
+        }
+
+        .content {
+            border: double 4px transparent;
+            padding: 2rem;
+            padding-top: 2.5rem;
+            padding-bottom: 2.5rem;
+            filter: drop-shadow(5px 5px 15px rgba(0, 0, 0, 0.25));
+        }
+
+        .putik {
+            top: 75px;
+            left: -50px;
+            width: 30%;
+        }
+
+        .daun {
+            right: 60px;
+            bottom: -45px;
+            height: 45%;
+        }
+
+        .num {
+            width: 90px;
+            height: 90px;
+            font-size: 54px;
+        }
+
+        .heading {
+            font-size: 39px;
+        }
+
+        .text {
+            font-size: 24px;
+        }
+    }
+
+    @media (min-width: 1920px) {
+
+        padding-bottom: 6rem;
+
+
+        .break {
+            font-size: 40px;
+        }
+
+        .content {
+            border: double 5px transparent;
+            border-radius: 50px;
+            gap: 2.5rem;
+            padding: 3rem;
+            padding-top: 3.5rem;
+            padding-bottom: 3.5rem;
+            filter: drop-shadow(5px 5px 20px rgba(0, 0, 0, 0.25));
+        }
+
+        .putik {
+            top: 75px;
+            left: -70px;
+            width: 30%;
+        }
+
+        .daun {
+            right: 60px;
+            bottom: -45px;
+            height: 50%;
+        }
+
+        .num {
+            width: 120px;
+            height: 120px;
+            font-size: 72px;
+        }
+
+        .heading {
+            font-size: 52px;
+        }
+
+        .text {
+            font-size: 32px;
+        }
+    }
+
+    @media (min-width: 2560px) {
+
+        padding-bottom: 8rem;
+
+
+        .break {
+            font-size: 53px;
+        }
+
+        .content {
+            border: double 6px transparent;
+            border-radius: 50px;
+            gap: 3.5rem;
+            padding: 4rem;
+            padding-top: 4.5rem;
+            padding-bottom: 4.5rem;
+            filter: drop-shadow(5px 5px 26px rgba(0, 0, 0, 0.25));
+        }
+
+        .putik {
+            top: 75px;
+            left: -90px;
+            width: 30%;
+        }
+
+        .daun {
+            right: 60px;
+            bottom: -45px;
+            height: 50%;
+        }
+
+        .num {
+            width: 160px;
+            height: 160px;
+            font-size: 96px;
+        }
+
+        .heading {
+            font-size: 69px;
+        }
+
+        .text {
+            font-size: 42px;
+        }
+    }
+}

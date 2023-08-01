@@ -1,0 +1,462 @@
+$font_XXL :52px;
+$font_XL:36px;
+$font_L : 32px;
+$font_M : 24px;
+$font_S : 20px;
+$font_XS : 16px;
+$font_XXS : 14px;
+
+.FAQsection {
+    background-color: #E1E8EA;
+    position:relative;
+    opacity: 1 !important;
+    // z-index: 99;
+    // z-index: 1;
+    padding: 100px 0px;
+    .prevButton {
+        position:absolute;
+        height:100%;
+        left:194px;
+        display: flex;
+        align-items: end;
+        bottom:0px;
+        border:none;
+        z-index:1;
+        background-color: transparent;
+        
+    }
+    .nextButton {
+        position:absolute;
+        height:100%;
+        right:194px;
+        display: flex;
+        align-items: end;
+        bottom:0px;
+        border:none;
+        z-index:1;
+        background-color: transparent;
+    }
+
+    .prevButton , .nextButton {
+        img {
+            // width:100px;
+            height:82px;
+            
+        }
+    }
+    @media(max-width:900px){
+        .nextButton {
+            right:94px;
+        }
+        .prevButton {
+            left:94px;
+        }
+        .prevButton , .nextButton {
+            img {
+                // width:100px;
+                height:72px;
+                
+            }
+        }
+    }
+    @media(max-width:700px){
+        padding: 50px 0px;
+        .nextButton {
+            right:60px;
+        }
+        .prevButton {
+            left:60px;
+        }
+        .prevButton , .nextButton {
+            img {
+                // width:100px;
+                height:59px;
+                
+            }
+        }
+    }
+    @media(max-width:600px){
+        padding: 50px 0px;
+        .nextButton {
+            right:36px;
+        }
+        .prevButton {
+            left:36px;
+        }
+        .prevButton , .nextButton {
+            img {
+                // width:100px;
+                height:59px;
+                
+            }
+        }
+    }
+    @media (max-width:400px){
+        padding-bottom: 50px;
+        .nextButton {
+            right:14px;
+        }
+        .prevButton {
+            left:14px;
+        }
+        .prevButton , .nextButton {
+            img {
+                // width:100px;
+                height:46px;
+                
+            }
+        }
+    }
+    // width: fit-content;
+    // height:fit-content;
+}
+.FAQ__isisection{
+    // margin:0px 200px;
+    margin-top:60px;
+    height:fit-content;
+
+    b {
+        font-family: Proxima_nova_bold;
+        
+    }
+    i {
+        
+    }
+    text {
+        display: flex ;
+        text-align: left;
+        justify-content: start;
+    }
+    .FAQ__section__isiPelaksanaan {
+        // display:flex;
+        // justify-content:center;
+        // flex-direction:column;
+        height:auto;
+        // padding:50px 0px;
+        background-color: #E1E8EA;
+        border-radius:45px;
+        z-index:3;
+        font-family: "Proxima_nova";
+        font-weight: 400;
+        color:#005683;
+    }
+    .FAQ__section__penentuHeight {
+        margin:0px 200px;
+    }
+    .FAQ__section__borderIsi {
+        height:fit-content;
+        padding:3px;
+        z-index:3;
+        // margin:50px 0;
+        border-radius: 45px;
+        background: linear-gradient(to right,#005683,#7083BC) !important;
+    }
+    .FAQ__idbox {
+        width:80px;
+        height:80px;
+        border-radius: 50%;
+        background: linear-gradient(135deg, #7083BC 0%, #6CBDAA 100%);        
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        color: #FFF;
+        // leading-trim: both;
+        // text-edge: cap;
+    }
+    
+    .FAQ__id {
+        font-family: Proxima_nova;
+        font-size: $font_XXL;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        margin:0px;
+        padding:0px;
+    }
+    .FAQ__array {
+        padding: 48px;
+        display:grid;
+        grid-template-columns: 1fr 9fr 1fr;
+
+    }
+    .FAQ__QAbox img{
+        display: none;
+    }
+    .FAQ__Quest {
+        font-family: Proxima_nova;
+        font-weight: 700;
+        font-size: $font_L;
+        padding:0px 50px;
+    }
+    .FAQ__Answer {
+        font-family: Proxima_nova;
+        font-weight: 400;
+        font-size: $font_M;
+        padding:0px 50px;
+        display: none;
+    }
+    .unactive , .active{
+        width:52px;
+        height:52px;
+        display: block;
+        margin:0px auto;
+    }
+    // style={window.innerWidth<=800 ? {display:"none"}:{display:"block",margin:"0px auto",width:"52px"}}
+    .swiper-slide {
+        // padding:20px;
+        background-color: #E1E8EA;
+        // display:none;
+    }
+    .swiper-slide-active{
+        width:100vw;
+        // padding-bottom:20px;
+        display:block !important;
+    }
+
+    @media (max-width:900px){
+        // style={window.innerWidth>=800 ? {display:"none"}:{display:"block",margin:"0px auto",width:"36px"}}
+        .FAQ__QAbox img{
+            display: block;
+            margin:0px auto;
+            width:36px;
+        }
+        .unactive , .active{
+            display: none;
+        }
+        .FAQ__section__penentuHeight {
+            margin:0px 100px;
+        }
+        .FAQ__array {
+            padding:36px;
+            display:flex;
+            flex-direction: column;
+    
+        }
+        .FAQ__idbox {
+            width:50px;
+            height:50px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #7083BC 0%, #6CBDAA 100%);        
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            color: #FFF;
+            margin: 0px auto;
+            // leading-trim: both;
+            // text-edge: cap;
+        }
+        .FAQ__id {
+            font-family: Proxima_nova;
+            font-size: $font_M;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin:0px;
+            padding:0px;
+        }
+        .FAQ__Quest {
+            font-size:$font_M;
+            text-align: center;
+            padding:0px 20px;
+        }
+        .FAQ__Answer {
+            text-align: center;
+            font-size: $font_S;
+            padding:0px 20px;
+            display: none;
+        }
+    }
+    @media(max-width:700px){
+        .FAQ__section__penentuHeight {
+            margin:0px 60px;
+        }
+    }
+
+    @media (max-width:600px){
+        margin-top:50px;
+        .FAQ__section__penentuHeight {
+            margin:0px 40px;
+        }
+        .FAQ__array {
+            padding:20px;
+            display:flex;
+            flex-direction: column;
+    
+        }
+        .FAQ__idbox {
+            width:40px;
+            height:40px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #7083BC 0%, #6CBDAA 100%);        
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            color: #FFF;
+            margin: 0px auto;
+            // leading-trim: both;
+            // text-edge: cap;
+        }
+        .FAQ__id {
+            font-family: Proxima_nova;
+            font-size: $font_S;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin:0px;
+            padding:0px;
+        }
+        .FAQ__Quest {
+            font-size:$font_S;
+            text-align: center;
+            padding:0px 5px;
+        }
+        .FAQ__Answer {
+            text-align: center;
+            font-size: $font_XS;
+            padding:0px 5px;
+            display: none;
+        }
+    }
+    
+
+    @media (max-width:400px){
+        margin-top:30px;
+        .FAQ__section__penentuHeight {
+            margin:0px 20px;
+        }
+        .FAQ__array {
+            margin: 0px 20px;
+            display:flex;
+            flex-direction: column;
+    
+        }
+        .FAQ__idbox {
+            width:35px;
+            height:35px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #7083BC 0%, #6CBDAA 100%);        
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            color: #FFF;
+            margin: 0px auto;
+            // leading-trim: both;
+            // text-edge: cap;
+        }
+        .FAQ__id {
+            font-family: Proxima_nova;
+            font-size: $font_XS;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            margin:0px;
+            padding:0px;
+        }
+        .FAQ__Quest {
+            font-size:$font_XS;
+            text-align: center;
+            padding:0px 5px;
+        }
+        .FAQ__Answer {
+            text-align: center;
+            font-size: $font_XXS;
+            padding:0px 5px;
+            display: none;
+        }
+        
+    }
+}
+
+.FAQ__controller {
+    background-color: #E1E8EA;
+    // position:relative;
+    // padding:100px 200px 0px 200px;
+    margin:100px 210px 0px 210px;
+    border-radius: 48px;
+    z-index: 1;
+    .button_active {
+        background: linear-gradient(135deg, #1E7299 0%, #6CB7AD 100%);
+        border-radius: 48px;
+        font-size: $font_XL;
+        font-family: Proxima_nova;
+        color:#E1E8EA;
+    }
+    .button_unactive {
+        border-radius: 48px;
+        background: #E1E8EA;
+        color:#277A9C;
+        font-size: $font_XL;
+        font-family: Proxima_nova;
+        margin:0px;
+    }
+    .swiper-wrapper {
+        // margin-left:20px;
+        // margin-right:20px;
+        width: fit-content !important;
+        // padding:0px 200px;
+        // position: relative;
+    }
+    .swiper-slide {
+        width:fit-content !important;
+        button {
+            background: linear-gradient(135deg, #1E7299 0%, #6CB7AD 100%);
+            border:none;
+            border-radius: 48px;
+            padding:4px;
+            font-size: $font_XL;         
+        }
+        
+    }
+    p{
+        margin:0px;
+        font-family: Proxima_nova;
+        font-weight: 700;
+        padding:10px 66px;
+    }
+
+    @media(max-width: 900px){
+        margin:0px 100px;
+        
+        p{
+            margin:0px;
+            font-size: $font_L;
+            font-family: Proxima_nova;
+            font-weight: 700;
+            padding:8px 52px;
+        }
+    }
+    @media(max-width:700px){
+        margin:0px 72px;
+        p{
+            margin:0px;
+            font-size: $font_M;
+            font-family: Proxima_nova;
+            font-weight: 700;
+            padding:8px 42px;
+        }
+    }
+    @media(max-width:600px){
+        margin:0px 44px;
+        p{
+            margin:0px;
+            font-size: $font_M;
+            font-family: Proxima_nova;
+            font-weight: 700;
+            padding:8px 42px;
+        }
+    }
+
+    @media(max-width: 400px){
+        margin:0px 24px;
+        
+        p{
+            margin:0px;
+            font-family: Proxima_nova;
+            font-weight: 700;
+            font-size: $font_S;
+            padding:4px 32px;
+        }
+
+    }
+
+}

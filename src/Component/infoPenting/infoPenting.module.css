@@ -1,0 +1,383 @@
+@font-face {
+    font-family: "Proxima_nova_bold";
+    src: url("../../fonts/Proxima Nova Bold.otf");
+}
+
+@font-face {
+    font-family: "Proxima_nova_thin";
+    src: url("../../fonts/Proxima Nova Thin.otf");
+}
+
+@font-face {
+    font-family: "Proxima_nova_extrabold";
+    src: url("../../fonts/Proxima\ Nova\ Extrabold.otf");
+}
+
+.container {
+    position: relative;
+    padding: 1.5rem;
+}
+
+.header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.bunga {
+    width: 3rem;
+}
+
+.title {
+    color: var(--deep-sea-blue, #005683);
+    font-size: 22px;
+    margin-bottom: 0px;
+    font-family: "Proxima_nova_extrabold";
+    text-align: center;
+}
+
+.box-content {
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.50);
+    margin-top: 1rem;
+    border-radius: 26px;
+    box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.16);
+    backdrop-filter: blur(10px);
+}
+
+.box-content::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    inset: 0;
+    border-radius: 26px;
+    padding: 2px;
+    background: linear-gradient(-45deg, #7083BC 0%, #6CBDAA 100%);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.number {
+    background: linear-gradient(135deg, #7083BC 0%, #6CBDAA 100%);
+    color: white;
+    font-family: "Proxima_nova_bold";
+    border-radius: 50%;
+}
+
+.num {
+    display: flex;
+    width: 40px;
+    height: 40px;
+    margin-bottom: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.textbox {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.heading {
+    color: var(--deep-sea-blue, #005683);
+    font-family: "Proxima_nova_bold";
+    margin-bottom: 0.2rem;
+    font-size: 19.5px;
+}
+
+.text {
+    margin-bottom: 0;
+    color: #7083BC;
+    font-size: 12px;
+}
+
+.line {
+    height: 2px;
+    background-image: linear-gradient(90deg, transparent, transparent 50%, rgba(255, 255, 255, 0.50) 50%, #fff 50%), linear-gradient(90deg, #6DB6AF 0%, #7199B9 100%);
+    background-size: 20px 3px, 100% 3px;
+    border: none;
+}
+
+/* @media (min-width: 375px) {
+    
+} */
+
+@media (min-width: 768px) {
+    .container {
+        padding-left: 3rem;
+        padding-right: 3rem;
+    }
+
+    .header {
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .title {
+        font-size: 26px;
+    }
+
+    .box-content {
+        border-radius: 2rem;
+        box-shadow: 0px 8px 16px 5px rgba(0, 0, 0, 0.16);
+    }
+
+    .box-content::before {
+        padding: 3px;
+        border-radius: 2rem;
+    }
+
+    .content {
+        padding: 1.5rem;
+        gap: 1.5rem;
+    }
+
+    .num {
+        width: 48px;
+        height: 48px;
+        font-size: 29px;
+    }
+
+    .heading {
+        font-size: 21px;
+    }
+
+    .text {
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        padding-left: 7rem;
+        padding-right: 7rem;
+    }
+
+    .header {
+        margin-bottom: 2rem;
+    }
+
+    .bunga {
+        width: 51px;
+    }
+
+    .title {
+        font-size: 32px;
+    }
+
+    .box-content{
+        box-shadow: 0px 10px 21px 6px rgba(0, 0, 0, 0.16);
+    }
+
+    .content {
+        padding: 2rem;
+        padding-top: 1.5rem;
+        padding-bottom: 1.5rem;
+    }
+
+    .num {
+        width: 42px;
+        height: 42px;
+        font-size: 28px;
+    }
+
+    .heading {
+        font-size: 17px;
+    }
+
+    .text {
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .container {
+        padding-left: 13rem;
+        padding-right: 13rem;
+    }
+
+    /* .header {
+        margin-bottom: 3rem;
+    } */
+
+    .bunga {
+        width: 64px;
+    }
+
+    .title {
+        font-size: 40px;
+    }
+
+    .box-content{
+        box-shadow: 0px 13px 26px 8px rgba(0, 0, 0, 0.16);
+    }
+
+    .num {
+        font-size: 34px;
+        height: 53px;
+        width: 53px;
+    }
+
+    .heading {
+        font-size: 21px;
+    }
+
+    .text {
+        font-size: 16px;
+    }
+}
+
+@media (min-width: 1440px) {
+    .container{
+        padding-left: 14rem;
+        padding-right: 14rem;
+    }
+
+    .header {
+        margin-bottom: 2.5rem;
+    }
+
+    .bunga{
+        width: 72px;
+    }
+
+    .title{
+        font-size: 45px;
+    }
+
+    .box-content{
+        border-radius: 2.5rem;
+        box-shadow: 0px 15px 30px 9px rgba(0, 0, 0, 0.16);
+    }
+
+    .box-content::before{
+        border-radius: 2.5rem;
+        padding: 4px;
+    }
+
+    .num {
+        width: 60px;
+        height: 60px;
+        font-size: 39px;
+    }
+
+    .heading {
+        font-size: 24px;
+    }
+
+    .text {
+        font-size: 18px;
+    }
+
+    .line {
+        height: 4px;
+    }
+}
+
+@media (min-width: 1920px) {
+    .container{
+        padding-left: 19rem;
+        padding-right: 19rem;
+    }
+
+    .header{
+        margin-bottom: 3rem;
+    }
+
+    .bunga{
+        width: 96px;
+    }
+
+    .title{
+        font-size: 60px;
+    }
+
+    .box-content{
+        border-radius: 3.5rem;
+        box-shadow: 0px 20px 39px 12px rgba(0, 0, 0, 0.16);
+    }
+
+    .box-content::before{
+        border-radius: 3.5rem;
+    }
+
+    .content{
+        padding: 2.5rem;
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+        gap: 2.5rem;
+    }
+
+    .num {
+        width: 80px;
+        height: 80px;
+        font-size: 52px;
+    }
+
+    .heading {
+        font-size: 32px;
+    }
+
+    .text {
+        font-size: 24px;
+    }
+}
+
+@media (min-width: 2560px) {
+    .container{
+        padding-left: 24rem;
+        padding-right: 24rem;
+    }
+
+    .bunga{
+        width: 120px;
+    }
+
+    .title{
+        font-size: 80px;
+    }
+
+    .box-content{
+        border-radius: 5rem;
+        box-shadow: 0px 26px 52px 16px rgba(0, 0, 0, 0.16);
+    }
+
+    .box-content::before{
+        border-radius: 5rem;
+    }
+
+    .content{
+        padding: 4rem;
+        padding-top: 3.5rem;
+        padding-bottom: 3.5rem;
+        gap: 4rem;
+    }
+
+    .num {
+        width: 106px;
+        height: 106px;
+        font-size: 69px;
+    }
+
+    .heading {
+        font-size: 42px;
+    }
+
+    .text {
+        font-size: 32px;
+    }
+}

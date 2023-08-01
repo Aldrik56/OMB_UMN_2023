@@ -1,0 +1,186 @@
+@keyframes animasiCircle1 {
+  0% {
+    top: -10%;
+    left: -10%;
+  }
+  33% {
+    top: -10%;
+    left: 20%;
+  }
+  66% {
+    top: 55%;
+    left: 45%;
+  }
+  100% {
+    top: -10%;
+    left: -10%;
+  }
+}
+
+@keyframes animasiCircle2 {
+  0% {
+    left: 50%;
+    right: -25.21%;
+    bottom: -45.24%;
+  }
+  33% {
+    left: 0%;
+    right: -25.21%;
+    bottom: -45.24%;
+  }
+  66% {
+    left: -35%;
+    right: -45.21%;
+    bottom: 10%;
+  }
+  100% {
+    left: 50%;
+    right: -25.21%;
+    bottom: -45.24%;
+  }
+}
+
+@keyframes animasiCircle3 {
+  0% {
+    left: -22.49%;
+    right: 52.14%;
+    top: 40.04%;
+    bottom: -29.94%;
+  }
+  33% {
+    left: -30%;
+    right: 42.14%;
+    top: -10.04%;
+    bottom: -39.94%;
+  }
+  66% {
+    left: 55.49%;
+    right: 42.14%;
+    top: -20%;
+    bottom: -19.94%;
+  }
+  100% {
+    left: -22.49%;
+    right: 52.14%;
+    top: 40.04%;
+    bottom: -29.94%;
+  }
+}
+
+.z_3 {
+  z-index: -3;
+}
+
+.circle1 {
+  animation-name: animasiCircle1;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+.circle2 {
+  animation-name: animasiCircle2;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+.circle3 {
+  animation-name: animasiCircle3;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+.bgArt__section {
+  background-image: url("../../../public/Assets/Home/bg1.webp");
+  background-size: 100% 100%;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  overflow: hidden;
+  position: absolute;
+  overflow: hidden;
+  z-index: -99;
+  /* background: linear-gradient(
+    45deg,
+    #005683,
+    #6cbdaa,
+    rgb(139, 214, 234)
+  ) !important; */
+}
+
+.bg1 {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  z-index: -3;
+  background: linear-gradient(
+    45deg,
+    #005683,
+    #6cbdaa,
+    rgb(139, 214, 234)
+  ) !important;
+}
+.circle1 {
+  position: absolute;
+  -webkit-filter: blur(5rem);
+  filter: blur(5rem);
+  top: -10%;
+  left: -10%;
+  /* width:80vw;
+    height:auto; */
+  width: 80%;
+  height: 50%;
+  /* z-index: 1; */
+  background: -webkit-radial-gradient(
+    at top left,
+    #7083bc 100%,
+    transparent 80%
+  ) !important;
+  background: radial-gradient(
+    at top left,
+    #7083bc 100%,
+    transparent 80%
+  ) !important;
+}
+
+.circle2 {
+  position: absolute;
+  -webkit-filter: blur(5rem);
+  filter: blur(5rem);
+  position: absolute;
+  left: 50%;
+  right: -25.21%;
+  bottom: -45.24%;
+  border-radius: 100%;
+  width: 80%;
+  height: 100%;
+  /* width:80vw; */
+  background: -webkit-radial-gradient(#005683 100%, transparent 80%) !important;
+  background: radial-gradient(#005683 100%, transparent 80%) !important;
+}
+
+.circle3 {
+  position: absolute;
+  -webkit-filter: blur(5rem);
+  filter: blur(5rem);
+  left: -22.49%;
+  right: 52.14%;
+  top: 40.04%;
+  bottom: -29.94%;
+  /* width:80vw; */
+  width: 80%;
+  height: 90%;
+  border-radius: 100%;
+  background: -webkit-radial-gradient(
+    circle at center,
+    #6bbdaa 100%,
+    transparent 80%
+  ) !important;
+  background: radial-gradient(
+    circle at center,
+    #6bbdaa 100%,
+    transparent 80%
+  ) !important;
+}
+
+.backgroundiOS {
+  background-image: url(../../page/tentangOMB/TentangOMB/Gradient.png);
+}

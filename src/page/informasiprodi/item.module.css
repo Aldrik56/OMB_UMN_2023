@@ -1,0 +1,233 @@
+@font-face {
+  font-family: "Proxima_nova";
+  src: url("../../fonts/Proxima Nova Font.otf");
+}
+@font-face {
+  font-family: "Proxima_nova_bold";
+  src: url("../../fonts/Proxima Nova Bold.otf");
+}
+@font-face {
+  font-family: "Proxima_nova_thin";
+  src: url("../../fonts/Proxima Nova Thin.otf");
+}
+
+/* .flip_card__section_informasiprodi { */
+  .h1 {
+  text-align: center;
+  color: #7083bc;
+  font-size: 4rem;
+  margin: 50px 0px 50px 0px;
+  font-family: "Proxima_nova_bold";
+}
+
+h6 {
+  text-align: center;
+  color: #005683;
+  font-size: 0.8rem;
+  margin-top: 30px;
+  font-family: "Proxima_nova";
+}
+
+.flip_card_inner_informasiprodi {
+  perspective: 1000px;
+}
+
+.linimasa_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 6vh;
+  overflow: hidden;
+  /* margin-top: 50vh; */
+  /* gap:5vh; */
+  /* z-index:3; */
+  background-color: #e1e8ea;
+  width:fit-content;
+  border-radius: 45px;
+  
+}
+
+.linimasa_item__controller {
+  justify-content: unset;
+  font-size: 13px !important;
+}
+.linimasa_item__controller > div {
+  white-space: nowrap;
+}
+.linimasa_item__isiItem {
+  padding: 20px !important;
+}
+.linimasa_item__isiItem p {
+  padding: 0 20px !important;
+}
+.linimasa_item__borderIsi {
+  width: 85vw !important;
+}
+
+.linimasa_item_title {
+  margin-bottom: 8.5vw;
+  text-align: center !important;
+  padding: 0.5vw 0.5vw;
+  width: 80%;
+  background-color: #e1e8ea;
+  color: #7083bc;
+  font-family: "Proxima_nova_bold";
+  font-size: 5vw;
+  font-weight: bold;
+  box-shadow: 8px 8px 10px 0px rgba(0, 0, 0, 0.25), -8px -8px 10px 0px rgba(255, 255, 255, 0.5);
+  border-radius: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+}
+
+@media (min-width: 300px) {
+  .linimasa_item__controller {
+    justify-content: unset;
+    font-size: 13px !important;
+  }
+  .linimasa_item__controller > div {
+    white-space: nowrap;
+  }
+  .linimasa_item__isiItem {
+    padding: 20px !important;
+  }
+  .linimasa_item__isiItem p {
+    padding: 0 20px !important;
+  }
+  .linimasa_item__borderIsi {
+    width: 85vw !important;
+  }
+  
+
+  .linimasa_item_title_content {
+    font-family: "Proxima_nova_thin";
+    font-size: 4vw;
+    font-weight: bold;
+    text-align: center;
+    padding: 20px;
+    border-radius: 3rem;
+    background-color: #e1e8ea;
+    margin: auto auto;
+  }
+
+  .h1 {
+    font-size: 2rem;
+  }
+}
+
+.linimasa_item_title_content {
+  font-family: "Proxima_nova_bold";
+  font-size: 4vw;
+  font-weight: bold;
+  text-align: center;
+  padding: 20px;
+  border-radius: 3rem;
+  background-color: #e1e8ea;
+  margin: auto auto;
+}
+
+.h1 {
+  font-size: 2rem;
+}
+
+.flip_card__section_informasiprodi {
+  
+}
+
+@media (min-width: 602px) and (max-width: 1199px) {
+  .linimasa_item__controller {
+    font-size: 20px !important;
+  }
+  .linimasa_item__isiItem {
+    padding: 20px !important;
+  }
+  .p {
+    font-size: 3vw;
+  }
+  .linimasa_item__isiItem p {
+    padding: 0 20px !important;
+  }
+  .linimasa_item__borderIsi {
+    width: 62vw !important;
+  }
+  .linimasa_item_title {
+    margin-top: 8.5vw;
+    margin-bottom: 8.5vw;
+    text-align: center;
+    padding: 0.5vw 0.5vw;
+    width: 70%;
+    background-color: #e1e8ea;
+    color: #7083bc;
+    font-family: "Proxima_nova_bold";
+    font-size: 5vw;
+    font-weight: bold;
+    box-shadow: 8px 8px 10px 0px rgba(0, 0, 0, 0.25), -8px -8px 10px 0px rgba(255, 255, 255, 0.5);
+    border-radius: 3rem;
+  }
+
+  .linimasa_item_title_content {
+    font-family: "Proxima_nova_bold";
+    font-size: 3vw;
+    font-weight: bold;
+    text-align: center;
+    padding: 30px;
+    border-radius: 3rem;
+    background-color: #e1e8ea;
+    margin: auto auto;
+  }
+  .h1 {
+    font-size: 4rem;
+  }
+}
+@media (min-width: 1200px) {
+  .linimasa_item__controller {
+    font-size: 18px !important;
+    justify-content: center;
+  }
+  .linimasa_item__isiItem {
+    padding: 50px !important;
+  }
+  .linimasa_item__isiItem p {
+    padding: 0 50px !important;
+  }
+  .linimasa_item__borderIsi {
+    width: 65vw !important;
+  }
+
+  h6 {
+    display: none;
+  }
+
+  .linimasa_item_title {
+    margin-bottom: 8.5vw;
+    text-align: center;
+    padding: 0.5vw 0.5vw;
+    width: 45%;
+    background-color: #e1e8ea;
+    color: #7083bc;
+    font-family: "Proxima_nova_bold";
+    font-size: 5vw;
+    font-weight: bold;
+    box-shadow: 8px 8px 10px 0px rgba(0, 0, 0, 0.25), -8px -8px 10px 0px rgba(255, 255, 255, 0.5);
+    border-radius: 3rem;
+  }
+
+  .linimasa_item_title_content {
+    font-family: "Proxima_nova_bold";
+    font-size: 1.3vw;
+    font-weight: bold;
+    text-align: center;
+    padding: 40px;
+    border-radius: 3rem;
+    background-color: #e1e8ea;
+    margin: auto auto;
+  }
+
+  .h1 {
+    font-size: 4rem;
+  }
+}
+/* } */
+

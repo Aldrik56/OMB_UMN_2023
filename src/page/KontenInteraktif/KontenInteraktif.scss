@@ -1,0 +1,407 @@
+.isi_konten_interaktif{
+    background-color: #E1E8EA;
+    display:flex;
+    justify-content: center;
+    padding-top: 8vh;
+    padding-bottom: 5vh;
+}
+
+.konten_ki{
+    background-color: #E1E8EA !important;
+}
+
+.button_dropdown{
+    background-color:#005683;
+    color:white;
+    border: none;
+    border-radius: 25px;
+    padding:15px 25px;
+    width:fit-content;
+    height:fit-content;
+    font-family: 'Proxima Nova';
+    align-self: center;
+    display: flex;
+    justify-content: center;
+    margin:0 auto 5vh;
+}
+
+.game{
+    .judul{
+        font-size: 3vw;
+        color: #005683;
+        font-family: "Proxima_nova_bold";
+        margin-bottom: 3.5vw;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+#cara_bermain{
+    background-color: #E1E8EA;
+    padding-bottom: 5vh;
+    z-index: 0;
+    position: relative;
+    .judul{
+        font-size: 3vw;
+        color: #005683;
+        font-family: "Proxima_nova_bold";
+        margin-bottom: 3.5vw;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .cara_bermain_game{
+        width: 50vw;
+        min-width: 300px;
+        border-radius: 25px !important;
+        box-shadow: 3px 3px 19px -10px rgba(66, 68, 90, 1);
+        margin:auto;
+        
+        
+    }
+    h6{
+        display:block;
+    }
+
+    h3{
+        text-align: center;
+        color:#7083BC;
+        padding:2vh;
+    }
+    .swiper {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        
+    }
+      
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        padding:5vh 5vw;
+        border-radius: 25px !important;
+        background-color: #E1E8EA;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color:#005683;
+    }
+    
+    .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .swiper-pagination-bullet-active {
+        background-color: #005683 !important;
+    }
+    .swiper-button-left, .swiper-button-right{
+        height:25px !important;
+        width:auto;
+    }
+    button{
+        padding:0;
+    }
+    .navigation_bermain{
+        display:flex;
+        justify-content: space-between;
+        padding-bottom: 5vh;
+        gap:2vw;
+
+        .arrow_cara_bermain{
+            width:10px;
+            height:20px;
+            align-self: center;
+        }
+        .arrow_cara_bermain:hover{
+            cursor: pointer;
+        }
+
+        .arrow_cara_bermain.prev{
+            transform: scaleX(-1);
+        }
+    }
+
+    .text{
+        font-size: 1.2vw;
+        color: #005683;
+        font-family: 'Proxima_nova';
+        text-align: center;
+        line-height: 2.1vw;
+    }
+
+    .sub-judul{
+        font-size: 2vw;
+        color: #005683;
+        font-family: 'Proxima_nova_bold';
+        margin-bottom: 0;
+        margin-left: 1vw;
+        margin-right: 1vw;
+        align-self: center;
+    }
+
+   
+}
+
+.game {
+    position: relative;
+
+    .supergrafis {
+        position: absolute;
+        width: 25vw;
+        left: -180%;
+        top: 40%;
+    }
+
+    .loading {
+        font-size: 1.2vw;
+        color: #005683;
+        font-family: 'Proxima_nova';
+        text-align: center;
+        line-height: 2.1vw;
+    }
+}
+
+.tentangGame {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+    margin: 5vw auto;
+    font-family: "Proxima_nova";
+
+    .supergrafis {
+        position: absolute;
+        width: 18vw;
+        top: 55%;
+        right: -15%;
+    }
+    .judul {
+        font-size: 3vw;
+        color: #005683;
+        font-family: "Proxima_nova_bold";
+        margin-bottom: 3.5vw;
+    }
+    .konten {
+        border: double 6px transparent;
+        border-radius: 50px;
+        background-image: linear-gradient(#E1E8EA, #E1E8EA), radial-gradient(circle at top left, #005683,#6CBDAA);
+        background-origin: border-box;
+        background-clip: padding-box, border-box;
+        padding: 2vw 0;
+        backdrop-filter: blur(8px);
+        
+        .box {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 3vw 8vw;
+
+            .sub-judul {
+                font-size: 2vw;
+                color: #005683;
+                font-family: 'Proxima_nova_bold';
+            }
+            .text {
+                font-size: 1.2vw;
+                color: #005683;
+                font-family: 'Proxima_nova';
+                text-align: center;
+                line-height: 2.1vw;
+            }
+        }
+        #box-atas {
+            width: 100%;
+            border-bottom: double 3px transparent;
+            background-image: linear-gradient(#E1E8EA, #E1E8EA), radial-gradient(circle at top left, #005683,#6CBDAA);
+            background-origin: border-box;
+            background-clip: padding-box, border-box;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+        }
+        #box-bawah {
+            width: 100%;
+            border-top: double 3px transparent;
+            background-image: linear-gradient(#E1E8EA, #E1E8EA), radial-gradient(circle at top left, #005683,#6CBDAA);
+            background-origin: border-box;
+            background-clip: padding-box, border-box;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+        }
+    }
+}
+
+// RESPONSIVE
+
+@media screen and (max-width: 1200px) {
+    .game {
+        position: relative;
+    
+        .supergrafis {
+            position: absolute;
+            width: 25vw;
+            left: -130%;
+            top: 40%;
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .game {
+        position: relative;
+    
+        .supergrafis {
+            position: absolute;
+            width: 25vw;
+            left: -100%;
+            top: 40%;
+        }
+        .judul {
+            font-size: 5vw;
+            font-family: "Proxima_nova_bold";
+            margin-bottom: 3.5vw;
+        }
+    }
+
+    .tentangGame {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        margin: 5vw auto;
+        font-family: "Proxima_nova";
+
+        .supergrafis {
+            position: absolute;
+            width: 18vw;
+            top: 73%;
+            right: -15%;
+        }
+        .judul {
+            font-size: 5vw;
+            font-family: "Proxima_nova_bold";
+            margin-bottom: 3.5vw;
+        }
+        .konten {
+            border: double 4px transparent;
+            border-radius: 50px;
+            background-image: linear-gradient(#E1E8EA, #E1E8EA), radial-gradient(circle at top left, #005683,#6CBDAA);
+            background-origin: border-box;
+            background-clip: padding-box, border-box;
+            padding: 1vw 0;
+            
+            .box {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                padding: 1.5vw 4vw;
+    
+                .sub-judul {
+                    font-size: 3.5vw;
+                    color: #005683;
+                    font-family: 'Proxima_nova_bold';
+                }
+                .text {
+                    font-size: 2.2vw;
+                    color: #005683;
+                    font-family: 'Proxima_nova';
+                    text-align: center;
+                    line-height: 3vw;
+                }
+            }
+            #box-atas {
+                width: 100%;
+                border-bottom: double 2px transparent;
+                background-image: linear-gradient(#E1E8EA, #E1E8EA), radial-gradient(circle at top left, #005683,#6CBDAA);
+                background-origin: border-box;
+                background-clip: padding-box, border-box;
+                border-top-left-radius: 50px;
+                border-top-right-radius: 50px;
+            }
+            #box-bawah {
+                width: 100%;
+                border-top: double 3px transparent;
+                background-image: linear-gradient(#E1E8EA, #E1E8EA), radial-gradient(circle at top left, #005683,#6CBDAA);
+                background-origin: border-box;
+                background-clip: padding-box, border-box;
+                border-bottom-left-radius: 50px;
+                border-bottom-right-radius: 50px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .game {
+        position: relative;
+    
+        .supergrafis {
+            position: absolute;
+            width: 25vw;
+            left: -70%;
+            top: 50%;
+        }
+        .loading {
+            font-size: 2.2vw;
+            color: #005683;
+            font-family: 'Proxima_nova';
+            text-align: center;
+            line-height: 3vw;
+        }
+    }
+    #cara_bermain{
+        .judul {
+            font-size: 5vw !important;
+            color: #005683;
+            font-family: 'Proxima_nova_bold';
+        }
+        .cara_bermain_game{
+
+            .sub-judul {
+                font-size: 3.5vw;
+                color: #005683;
+                font-family: 'Proxima_nova_bold';
+            }
+
+            .text {
+                font-size: 2.2vw;
+                color: #005683;
+                font-family: 'Proxima_nova';
+                text-align: center;
+                line-height: 3vw;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .game {
+        position: relative;
+    
+        .supergrafis {
+            position: absolute;
+            width: 25vw;
+            left: -40%;
+            top: 60%;
+        }
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .game {
+        position: relative;
+    
+        .supergrafis {
+            position: absolute;
+            width: 30vw;
+            left: -15%;
+            top: 95%;
+        }
+    }
+}

@@ -1,0 +1,48 @@
+.awanKanan {
+  width: 20%;
+  position: absolute;
+  right: 10%;
+  top: 0px;
+  animation: awanKanan 10s ease-in-out infinite;
+}
+
+.awanKiri {
+  width: 20%;
+  position: absolute;
+  right: 80%;
+  bottom: -10%;
+  animation: awanKiri 10s ease-in-out infinite;
+}
+
+@keyframes awanKanan {
+  0% {
+    right: 10%;
+  }
+  25% {
+    right: -20%;
+  }
+  26% {
+    left: -20%;
+  }
+  60% {
+    left: 100%;
+  }
+  70% {
+    right: 100%;
+  }
+}
+
+@keyframes awanKiri {
+  0% {
+    right: 80%;
+  }
+  25% {
+    right: -20%;
+  }
+  50% {
+    left: -20%;
+  }
+  100% {
+    left: 100%;
+  }
+}

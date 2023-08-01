@@ -1,0 +1,267 @@
+.pelaksanaanBawah__section {
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction:column;
+    padding-top:10vh;
+    overflow: hidden;
+    /* margin-top: 50vh; */
+    /* gap:5vh; */
+    /* z-index:3; */
+    background-color: #E1E8EA;
+}
+
+.pelaksanaanBawah__section__controller {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width:100vw;
+    /* height:100vh; */
+    font: "Proxima_nova";
+    font-weight: 800;
+    font-size: 26px;
+    /* background: linear-gradient(45deg, #6cbdaa, rgb(139, 214, 234)) !important; */
+}
+.pelaksanaanBawah__section__controller >div{
+    width:23vw;
+    height:80px;
+}
+.controller__active {
+    text-align: center;
+    color:#005683;
+    border-bottom:5px solid #005683;
+}
+.controller__unactive {
+    color:#E1E8EA;
+    /* identical to box height */
+    text-shadow: 0 0 2px #005683;
+    text-align: center;
+    border-bottom: 1px solid #005683;
+}
+.pelaksanaanBawah__section__isiPelaksanaan {
+    display:flex;
+    justify-content:center;
+    flex-direction:column;
+    height:auto;
+    background-color: #E1E8EA;
+    border-radius:45px;
+    padding:50px;
+    z-index:3;
+    font-family: "Proxima_nova";
+    font-weight: 400;
+    color:#005683;
+}
+.pelaksanaanBawah__section__isiPelaksanaan h3 {
+    text-align:center;
+    font-weight: 700;
+}
+.pelaksanaanBawah__section__isiPelaksanaan p {
+    padding: 0 50px;
+}
+.pelaksanaanBawah__section__isiPelaksanaan hr {
+    background: linear-gradient(to right,#005683,#7083BC) !important;
+    opacity:100%;
+    height:3px;
+}
+
+.pelaksanaanBawah__section__borderIsi {
+    width:65vw;
+    height:auto;
+    padding:3px;
+    z-index:3;
+    margin:50px 0;
+    border-radius: 45px;
+    background: linear-gradient(to right,#005683,#7083BC) !important;
+}
+.bgArtBawah {
+    width:100%;
+    height:100%;
+    overflow:hidden;
+}
+
+.bunga1 {
+    position:absolute;
+    width:9vw;
+    height:auto;
+    z-index:1;
+    top:130vh;
+    left :0px;
+}
+.bunga2 {
+    position:absolute;
+    width:13vw;
+    height:auto;
+    z-index:1;
+    top:230vh;
+    left :120px;
+}
+.bunga3 {
+    position:absolute;
+    width:9vw;
+    height:auto;
+    z-index:1;
+    top:130vh;
+    right :0px;
+}
+.bunga4 {
+    position:absolute;
+    width:5vw;
+    height:auto;
+    z-index:-1;
+    top:290vh;
+    left:2vw;
+}
+.bunga5 {
+    position:absolute;
+    width:9vw;
+    height:auto;
+    z-index:0 !important;
+    top:290vh;
+    right:10vw;
+}
+.awan1 {
+    position:absolute;
+    width:18vw;
+    height:auto;
+    z-index:1;
+    top:170vh;
+    left :0vw;
+}
+.awan2 {
+    position:absolute;
+    width:20vw;
+    height:auto;
+    /* z-index:1; */
+    top:250vh;
+    right :0vw;
+}
+
+.awan3 {
+    position:absolute;
+    width:18vw;
+    height:auto;
+    z-index:1;
+    top:270vh;
+    left :5vw;
+}
+
+@media (min-width:300px){
+    .pelaksanaanBawah__section__controller {
+        font-size: 16px !important;
+    }
+    .pelaksanaanBawah__section__isiPelaksanaan {
+        padding: 20px !important;
+    }
+    .pelaksanaanBawah__section__isiPelaksanaan p {
+        padding: 0 20px !important;; 
+    }
+    .pelaksanaanBawah__section__borderIsi {
+        width:85vw !important;
+    }
+    .pelaksanaanBawah__section__controller >div{
+        width:31vw !important;
+        height:60px !important;
+    }
+    /* .bunga1 {
+        position:absolute;
+        width:39vw !important;
+        height:auto;
+        z-index:1;
+        top:100vh;
+        left :0px;
+    } */
+    .bunga2 {
+        position:absolute;
+        width:13vw;
+        height:auto;
+        z-index:1;
+        top:230vh;
+        left :120px;
+    }
+    .bunga3 {
+        position:absolute;
+        width:9vw;
+        height:auto;
+        z-index:1;
+        top:130vh;
+        right :0px;
+    }
+    .bunga4 {
+        position:absolute;
+        width:5vw;
+        height:auto;
+        z-index:1;
+        top:290vh;
+        left:2vw;
+    }
+    .bunga5 {
+        position:absolute;
+        width:9vw;
+        height:auto;
+        z-index:1;
+        top:290vh;
+        right:10vw;
+    }
+    .awan1 {
+        position:absolute;
+        width:18vw;
+        height:auto;
+        z-index:1;
+        top:170vh;
+        left :0vw;
+    }
+    .awan2 {
+        position:absolute;
+        width:20vw;
+        height:auto;
+        z-index:1;
+        top:250vh;
+        right :0vw;
+    }
+    
+    .awan3 {
+        position:absolute;
+        width:18vw;
+        height:auto;
+        z-index:1;
+        top:270vh;
+        left :5vw;
+    }
+}
+@media (min-width:800px){
+    .pelaksanaanBawah__section__controller {
+        font-size: 20px !important;
+    }
+    .pelaksanaanBawah__section__isiPelaksanaan {
+        padding: 20px !important;
+    }
+    .pelaksanaanBawah__section__isiPelaksanaan p {
+        padding: 0 20px !important;; 
+    }
+    .pelaksanaanBawah__section__borderIsi {
+        width:62vw !important;
+    }
+    .pelaksanaanBawah__section__controller >div{
+        width:28vw !important;
+        height:70px !important;
+    }
+}
+@media(min-width:1200px){
+    .pelaksanaanBawah__section__controller {
+        font-size: 26px !important;
+    }
+    .pelaksanaanBawah__section__isiPelaksanaan {
+        padding: 50px !important;
+    }
+    .pelaksanaanBawah__section__isiPelaksanaan p {
+        padding: 0 50px !important;; 
+    }
+    .pelaksanaanBawah__section__borderIsi {
+        width:65vw !important;
+    }
+    .pelaksanaanBawah__section__controller >div{
+        width:25vw !important;
+        height:80px !important;
+    }
+}
+

@@ -1,0 +1,1 @@
+export { InformasiOMB } from "./InformasiOMB";

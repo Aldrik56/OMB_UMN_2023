@@ -1,0 +1,225 @@
+@font-face {
+    font-family: "Proxima_nova_bold";
+    src: url("../../fonts/Proxima Nova Bold.otf");
+}
+
+@font-face {
+    font-family: "Proxima_nova_thin";
+    src: url("../../fonts/Proxima Nova Thin.otf");
+}
+
+@font-face {
+    font-family: "Proxima_nova_extrabold";
+    src: url("../../fonts/Proxima\ Nova\ Extrabold.otf");
+}
+
+.card-container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+.card {
+    position: relative;
+    /* background-color: rgba(255, 255, 255, 0.50); */
+    border-radius: 34px;
+    box-shadow: 0px 4px 8px 2px rgba(0, 0, 0, 0.16);
+    backdrop-filter: blur(16px);
+    height: 360px;
+    width: 250px;
+    padding: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: double 2px transparent;
+    border-radius: 26px;
+    background-image: linear-gradient(white, white), radial-gradient(circle at top left, rgba(112, 131, 188) 0%, rgba(108, 189, 170) 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+}
+
+/* .card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    inset: 0;
+    border-radius: 34px;
+    padding: 2px;
+    background: linear-gradient(-45deg, #7083BC 0%, #6CBDAA 100%);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+} */
+
+.card-profile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #7bb6d37a 0%, #70acb77a 100%);
+    width: 117px;
+    aspect-ratio: 1/1;
+    position: relative;
+}
+
+.card-img {
+    width: 75%;
+}
+
+.card-num {
+    position: absolute;
+    bottom: -10px;
+    right: 0;
+    background: linear-gradient(135deg, rgba(108, 189, 170, 0.70) 0%, rgba(112, 131, 188, 0.70) 100%);
+    box-shadow: 0px -4px 8px 0px rgba(0, 0, 0, 0.15) inset;
+    filter: drop-shadow(0px 6px 10px rgba(0, 0, 0, 0.20));
+    backdrop-filter: blur(16px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 35px;
+    aspect-ratio: 1/1;
+    color: white;
+    font-size: 20px;
+    font-family: "Proxima_nova_extrabold";
+}
+
+.card-name {
+    color: var(--deep-sea-blue, #005683);
+    text-align: center;
+    font-size: 17px;
+    font-family: "Proxima_nova_bold";
+    line-height: 28px;
+}
+
+.card-bottom {
+    display: flex;
+    justify-content: center;
+}
+
+.card-button {
+    width: 205px;
+    height: 52px;
+    border: transparent;
+    border-radius: 33px;
+    background: linear-gradient(180deg, #4A9BBA 0%, #065B87 100%);
+    box-shadow: 0px -3px 4px 0px rgba(0, 0, 0, 0.25) inset, 0px 3px 3px 0px rgba(0, 0, 0, 0.20);
+}
+
+.card-link {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 17px;
+    line-height: 28px;
+}
+
+.card-icon {
+    width: 10%;
+}
+
+@media(min-width: 768px) {
+    .card {
+        border: double 3px transparent;
+    }
+}
+
+@media (min-width: 1024px) {
+    .card-container {
+        flex-direction: row;
+        justify-content: space-between;
+        padding-left: 7rem;
+        padding-right: 7rem;
+    }
+}
+
+@media (min-width: 1280px) {
+    .card-container {
+        padding-left: 13rem;
+        padding-right: 13rem;
+    }
+}
+
+@media (min-width: 1440px) {
+    .card-container {
+        padding-left: 14rem;
+        padding-right: 14rem;
+    }
+
+    .card {
+        border: double 4px transparent;
+    }
+}
+
+@media (min-width: 1920px) {
+    .card-container {
+        padding-left: 19rem;
+        padding-right: 19rem;
+        margin-bottom: 5rem;
+    }
+
+    .card {
+        height: 585px;
+        width: 406px;
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        border-radius: 56px;
+        box-shadow: 0px 20px 39px 12px rgba(0, 0, 0, 0.16);
+    }
+
+    /* .card::before {
+        border-radius: 56px;
+        padding: 4px;
+    } */
+
+    .card-profile {
+        width: 190px;
+    }
+
+    .card-num {
+        width: 72px;
+        font-size: 40px;
+    }
+
+    .card-name {
+        font-size: 28px;
+        line-height: 45px;
+    }
+
+    .card-button {
+        width: 334px;
+        height: 80px;
+        border-radius: 53.5px;
+        box-shadow: 0px -6px 8px 0px rgba(0, 0, 0, 0.25) inset, 0px 6px 6px 0px rgba(0, 0, 0, 0.20);
+    }
+
+    .card-link {
+        font-size: 28px;
+        gap: 20px;
+    }
+}
+
+@media (min-width: 2560px) {
+    .card-container {
+        padding-left: 24rem;
+        padding-right: 24rem;
+    }
+}

@@ -1,0 +1,1 @@
+export { Home3Agu } from "./Home3Agu";

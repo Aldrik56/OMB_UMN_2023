@@ -1,0 +1,1 @@
+export { BingkaiResmi } from "./BingkaiResmi";

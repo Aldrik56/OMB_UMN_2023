@@ -1,0 +1,1 @@
+export { BannerSurat } from "./BannerSurat";

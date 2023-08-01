@@ -1,0 +1,728 @@
+@font-face {
+  font-family: "Proxima_nova";
+  src: url("../../fonts/Proxima Nova Font.otf");
+}
+@font-face {
+  font-family: "Proxima_nova_bold";
+  src: url("../../fonts/Proxima Nova Bold.otf");
+}
+@font-face {
+  font-family: "Proxima_nova_thin";
+  src: url("../../fonts/Proxima Nova Thin.otf");
+}
+
+@keyframes animasiCircle1 {
+  0% {
+    top: -10%;
+    left: -10%;
+  }
+  33% {
+    top: -10%;
+    left: 20%;
+  }
+  66% {
+    top: 55%;
+    left: 45%;
+  }
+  100% {
+    top: -10%;
+    left: -10%;
+  }
+}
+
+@keyframes animasiCircle2 {
+  0% {
+    left: 50%;
+    right: -25.21%;
+    bottom: -45.24%;
+  }
+  33% {
+    left: 0%;
+    right: -25.21%;
+    bottom: -45.24%;
+  }
+  66% {
+    left: -35%;
+    right: -45.21%;
+    bottom: 10%;
+  }
+  100% {
+    left: 50%;
+    right: -25.21%;
+    bottom: -45.24%;
+  }
+}
+
+@keyframes animasiCircle3 {
+  0% {
+    left: -22.49%;
+    right: 52.14%;
+    top: 40.04%;
+    bottom: -29.94%;
+  }
+  33% {
+    left: -30%;
+    right: 42.14%;
+    top: -10.04%;
+    bottom: -39.94%;
+  }
+  66% {
+    left: 55.49%;
+    right: 42.14%;
+    top: -20%;
+    bottom: -19.94%;
+  }
+  100% {
+    left: -22.49%;
+    right: 52.14%;
+    top: 40.04%;
+    bottom: -29.94%;
+  }
+}
+
+@keyframes animasiRantingKiri {
+  from {
+    left: -8vw;
+    transform: rotate(-30deg);
+  }
+  to {
+    transform: rotate(0deg);
+    left: 0;
+  }
+}
+@keyframes animasiRantingKanan {
+  from {
+    /* transform: scaleX(-1) !important; */
+    right: -5vw;
+    transform: rotate(-30deg);
+  }
+  to {
+    transform: rotate(0deg);
+    /* transform: scaleX(-1); */
+    right: 0vw;
+  }
+}
+@keyframes animasiBunga1 {
+  from {
+    right: -5%;
+    top: 40.94%;
+    bottom: -7.61%;
+  }
+  to {
+    right: 8%;
+    top: 30.94%;
+    bottom: -7.61%;
+  }
+}
+@keyframes animasiKupu4 {
+  from {
+    top: 53%;
+    left: -4%;
+  }
+  to {
+    top: 45%;
+    left: 4%;
+  }
+}
+@keyframes animasiKupu2 {
+  from {
+    left: -4%;
+    top: 45%;
+  }
+  to {
+    left: 4%;
+    top: 35%;
+  }
+}
+
+.Home2 {
+  font-family: "Proxima_nova";
+  /* font-weight: regular; */
+  width: 100vw;
+  height: 200vh;
+}
+
+.z-1 {
+  z-index: 1;
+}
+
+.z-2 {
+  z-index: 10;
+}
+
+.absolute {
+  /* position: absolute; */
+}
+
+.relative {
+  position: relative;
+}
+
+.bottom-right {
+  top: 0px;
+  right: 0px;
+}
+
+.section1 {
+  /* overflow: hidden; */
+  overflow: hidden;
+  position: relative;
+  height: 200vh;
+  width: 100vw;
+}
+
+.Home2 .bg1 {
+  top: 0px;
+  left: 0px;
+  /* width: 100vw;
+  height: 200vh;
+  position: absolute; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(45deg,#005683, #6cbdaa, rgb(139, 214, 234)) !important;
+}
+
+.circle1 {
+  animation-name: animasiCircle1;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+.circle2 {
+  animation-name: animasiCircle2;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+.circle3 {
+  animation-name: animasiCircle3;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+
+.Home2 .bg1 .circle1 {
+  position: absolute;
+  -webkit-filter: blur(5rem);
+  filter: blur(5rem);
+  top: -10%;
+  left: -10%;
+  width: 80%;
+  height: 50%;
+
+  background: -webkit-radial-gradient(at top left, #7083bc 100%, transparent 80%) !important;
+  background: radial-gradient(at top left, #7083bc 100%, transparent 80%) !important;
+}
+
+.Home2 .bg1 .circle2 {
+  position: absolute;
+  -webkit-filter: blur(5rem);
+  filter: blur(5rem);
+  position: absolute;
+  left: 50%;
+  right: -25.21%;
+  bottom: -45.24%;
+  border-radius: 100%;
+  width: 80%;
+  height: 100%;
+  background: -webkit-radial-gradient(#005683 100%, transparent 80%) !important;
+  background: radial-gradient(#005683 100%, transparent 80%) !important;
+}
+
+.Home2 .bg1 .circle3 {
+  position: absolute;
+  -webkit-filter: blur(5rem);
+  filter: blur(5rem);
+  left: -22.49%;
+  right: 52.14%;
+  top: 40.04%;
+  bottom: -29.94%;
+  width: 80%;
+  height: 90%;
+  border-radius: 100%;
+  background: -webkit-radial-gradient(circle at center, #6bbdaa 100%, transparent 80%) !important;
+  background: radial-gradient(circle at center, #6bbdaa 100%, transparent 80%) !important;
+}
+
+.logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: -80%;
+}
+.ombakAtas {
+  width: 100%;
+  position: absolute;
+  z-index: 2;
+  bottom: 0px;
+  right: 0px;
+}
+.box-content1 {
+  /* top: 50%;
+  left: 50%; */
+  /* transform: translate(-50%, -70%); */
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
+}
+
+.header {
+  width: 90vw;
+}
+.header p {
+  font-family: "Proxima_nova_bold" !important;
+}
+.logoPutih {
+  /* justify-content: center; */
+  /* left: 5%; */
+  width: 80vw;
+}
+.pengumumanSection {
+  width: 50vw;
+  /* height: 1034px; */
+  text-align: center;
+  background: linear-gradient(180deg, #d9d9d9 0%, rgba(217, 217, 217, 0.632653) 13.02%, rgba(217, 217, 217, 0) 39.06%, rgba(217, 217, 217, 0.415142) 86.98%, rgba(217, 217, 217, 0.895833) 100%);
+  box-shadow: -5px -5px 20px rgba(255, 255, 255, 0.25), 5px 5px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 28.7847px;
+  /* background: linear-gradient(180deg, #D9D9D9 0%, rgba(217, 217, 217, 0.632653) 13.02%, rgba(217, 217, 217, 0.3) 39.06%, rgba(217, 217, 217, 0.415142) 86.98%, rgba(217, 217, 217, 0.895833) 100%);
+  box-shadow: -5px -5px 20px rgba(255, 255, 255, 0.25), 5px 5px 20px rgba(0, 0, 0, 0.25);
+  border-radius: 28.7847px; */
+}
+.judulPengumuman {
+  font-family: "Proxima_nova_bold" !important;
+}
+.pengumumanSection p {
+  font-size: 36px;
+  font-family: "Proxima_nova";
+}
+
+.taglinePutih {
+  width: 80vw;
+}
+
+.ranting_kiri {
+  opacity: 0.5;
+  position: absolute;
+  z-index: 2;
+  width: 25vw;
+  top: 15%;
+  left: 0px;
+  /* transform: rotate(-40deg); */
+  animation-name: animasiRantingKiri;
+  animation-duration: 1.5s;
+  /* animation-iteration-count: infinite; */
+}
+
+.ranting_kanan {
+  opacity: 0.5;
+  position: absolute;
+  z-index: 2;
+  width: 25vw;
+  top: 15%;
+  /* right: 0px; */
+  transform: rotate(0deg);
+  scale: -1 1 !important;
+  /* scaleX(-1) !important; */
+  right: 0vw;
+  animation-name: animasiRantingKanan;
+  animation-duration: 1.5s;
+}
+
+.kupu1 {
+  position: absolute;
+  z-index: 2;
+  width: 1.2vw;
+  top: 33%;
+  rotate: -30deg;
+  left: 2%;
+  opacity: 0.5;
+}
+.kupu3 {
+  position: absolute;
+  z-index: 2;
+  width: 1vw;
+  top: 39%;
+  rotate: -30deg;
+  left: 10%;
+  opacity: 0.5;
+}
+
+.kupu2 {
+  position: absolute;
+  z-index: 2;
+  width: 3.5vw;
+  top: 35%;
+  transform: scaleX(-1);
+  left: 4%;
+  opacity: 0.5;
+
+  animation-name: animasiKupu2;
+  animation-duration: 1.5s;
+}
+
+.kupu4 {
+  position: absolute;
+  z-index: 2;
+  width: 6vw;
+  rotate: 30deg;
+  top: 45%;
+  left: 4%;
+  opacity: 0.5;
+
+  animation-name: animasiKupu4;
+  animation-duration: 1.5s;
+}
+
+.bunga1 {
+  position: absolute;
+  /* left: 79%; */
+  width: 20%;
+  z-index: 2;
+  right: 8%;
+  top: 30.94%;
+  bottom: -7.61%;
+  opacity: 0.5;
+  mix-blend-mode: soft-light;
+  transform: rotate(-12.95deg);
+
+  animation-name: animasiBunga1;
+  animation-duration: 1.5s;
+}
+.bunga2 {
+  position: absolute;
+  z-index: 2;
+  left: 27.88%;
+  right: 60.97%;
+  top: 60.25%;
+  bottom: 31.7%;
+
+  mix-blend-mode: soft-light;
+  transform: rotate(-95.48deg);
+}
+.bungaPutih1 {
+  position: absolute;
+  width: 20%;
+  left: -3.34%;
+  right: 77.43%;
+  top: 62.16%;
+  bottom: 13.37%;
+  z-index: 2;
+  mix-blend-mode: soft-light;
+  transform: rotate(+45deg);
+  /* transform: matrix(0.99, 0.15, -0.22, 0.98, 0, 0); */
+}
+.bungaPutih2 {
+  position: absolute;
+  left: 83.31% !important;
+  right: 20% !important;
+  top: 48.41%;
+  bottom: 27.85%;
+  scale: -1 1;
+  transform: rotate(+40deg);
+  z-index: 2;
+  mix-blend-mode: soft-light;
+}
+
+.bungaPutih3 {
+  position: absolute;
+  width: 20%;
+  left: 83.31% !important;
+  right: 20% !important;
+  top: 68.41%;
+  bottom: 27.85%;
+  scale: -1 1;
+  transform: rotate(+40deg);
+  z-index: 2;
+  mix-blend-mode: soft-light;
+}
+.button_lihat {
+  padding-bottom: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button_lihat button {
+  width: 22.5vw;
+  height: 12.8vh;
+  border: none;
+  color: #e1e8ea;
+  border-radius: 48px;
+  font-weight: 700;
+  font-size: 32px;
+
+  background: linear-gradient(180deg, #7083bc 0%, #376c9f 88.54%, #005683 100%);
+  box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25), -5px -5px 20px #ffffff;
+  /* background: linear-gradient(#7083bc, #376c9f, #005683); */
+}
+.button_lihat button:hover {
+  transform: scale(0.95);
+}
+
+@media only screen and (min-width: 300px) {
+  .logoPutih {
+    width: 45vw;
+  }
+
+  .taglinePutih {
+    margin-top: 6%;
+    width: 50vw;
+  }
+  .header {
+    width: 130vw;
+  }
+  .logo {
+    margin-top: -10vh;
+  }
+  .bg1 {
+    height: 150vh !important;
+  }
+  .Home2 {
+    height: 150vh !important;
+  }
+  .section1 {
+    height: 150vh !important;
+  }
+  .pengumumanSection p {
+    font-size: 14px !important;
+    margin: 30px;
+  }
+  .pengumumanSection {
+    width: 80vw;
+    padding: 10px 0px;
+    margin: 20px auto;
+  }
+  .button_lihat button {
+    width: 40vw;
+    font-size: 16px;
+    height: 8vh;
+  }
+  .header p {
+    font-size: 0.8rem !important;
+  }
+}
+@media only screen and (min-width: 360px) {
+  .logoPutih {
+    width: 45vw;
+  }
+
+  .taglinePutih {
+    margin-top: 6%;
+    width: 50vw;
+  }
+  .header {
+    width: 130vw;
+  }
+  .logo {
+    margin-top: -10vh;
+  }
+  .bg1 {
+    height: 150vh !important;
+  }
+  .Home2 {
+    height: 150vh !important;
+  }
+  .section1 {
+    height: 150vh !important;
+  }
+  .pengumumanSection p {
+    font-size: 14px !important;
+    margin: 30px;
+  }
+  .pengumumanSection {
+    width: 80vw;
+    padding: 10px 0px;
+    margin: 20px auto;
+  }
+  .button_lihat button {
+    width: 40vw;
+    font-size: 16px;
+    height: 8vh;
+  }
+  .header p {
+    font-size: 1rem !important;
+  }
+}
+@media only screen and (min-width: 420px) {
+  .logoPutih {
+    width: 45vw;
+  }
+
+  .taglinePutih {
+    margin-top: 6%;
+    width: 50vw;
+  }
+  .header {
+    width: 130vw;
+  }
+  .logo {
+    margin-top: -10vh;
+  }
+  .Home2 .bg1 {
+    height: 190vh !important;
+  }
+  .section1 {
+    height: 190vh !important;
+  }
+  .pengumumanSection p {
+    font-size: 20px;
+    /* margin:62px; */
+  }
+  .pengumumanSection {
+    width: 80vw;
+    padding: 10px 0px;
+  }
+  .button_lihat button {
+    width: 40vw;
+    font-size: 24px;
+    height: 8vh;
+  }
+}
+@media only screen and (min-width: 512px) {
+  .logoPutih {
+    width: 45vw;
+  }
+
+  .taglinePutih {
+    margin-top: 6%;
+    width: 50vw;
+  }
+  .header {
+    width: 130vw;
+  }
+  .logo {
+    margin-top: -10vh;
+  }
+  .Home2 .bg1 {
+    height: 210vh !important;
+  }
+  .section1 {
+    height: 210vh !important;
+  }
+  .pengumumanSection p {
+    font-size: 24px;
+    /* margin:62px; */
+  }
+  .pengumumanSection {
+    width: 60vw;
+    padding: 10px 0px;
+  }
+  .button_lihat button {
+    width: 40vw;
+  }
+  .header p {
+    font-size: 1.5rem !important;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .button_lihat button {
+    width: 40vw;
+  }
+  .section1 {
+    min-height: 115vh;
+  }
+  .Home2 .bg1 {
+    height: 270vh !important;
+  }
+  .section1 {
+    height: 270vh !important;
+  }
+
+  .Home2 .bg1 .circle1 {
+    filter: blur(10rem);
+  }
+
+  .Home2 .bg1 .circle2 {
+    filter: blur(10rem);
+  }
+
+  .Home2 .bg1 .circle3 {
+    filter: blur(10rem);
+  }
+
+  .logo {
+    margin-top: -20vh;
+  }
+  .pengumumanSection p {
+    font-size: 24px !important;
+    margin: 40px !important;
+  }
+  .pengumumanSection {
+    width: 60vw;
+    padding: 10px 0px;
+  }
+  .header {
+    width: 130vw;
+  }
+  .header p {
+    font-size: 2rem !important;
+  }
+  .button_lihat button {
+    width: 22.5vw;
+  }
+  .header p {
+    font-size: 1.5rem !important;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .logoPutih {
+    width: 35vw;
+  }
+  .pengumumanSection p {
+    font-size: 36px !important;
+  }
+
+  .taglinePutih {
+    margin-top: 6%;
+    width: 35vw;
+  }
+  .logo {
+    margin-top: -20vh;
+  }
+  .Home2 .bg1 {
+    height: 270vh !important;
+  }
+  .section1 {
+    height: 270vh !important;
+  }
+  .header p {
+    font-size: 2.5rem !important;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .logoPutih {
+    width: 25vw;
+  }
+  .Home2 .bg1 {
+    height: 250vh !important;
+  }
+  .section1 {
+    height: 250vh !important;
+  }
+  .logo {
+    margin-top: -10vh;
+  }
+  .pengumumanSection {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 55vw;
+    margin: 70px auto;
+  }
+  .pengumumanSection p {
+    width: 50vw;
+  }
+  .header p {
+    font-size: 3rem !important;
+  }
+}
+
+@media only screen and (min-width: 1360px) {
+  .logo {
+    margin-top: -20vh;
+  }
+}

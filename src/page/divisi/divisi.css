@@ -1,0 +1,16 @@
+.divisi {
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: auto;
+  overflow: hidden;
+  position: absolute;
+  z-index: -11;
+  background: linear-gradient(45deg, #005683, #6cbdaa, rgb(139, 214, 234)) !important;
+}
+.bg_header {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: -12;
+}

@@ -1,0 +1,419 @@
+@keyframes animasiCircle1 {
+  0% {
+    top: -10%;
+    left: -10%;
+  }
+  33% {
+    top: -10%;
+    left: 20%;
+  }
+  66% {
+    top: 55%;
+    left: 45%;
+  }
+  100% {
+    top: -10%;
+    left: -10%;
+  }
+}
+
+@keyframes animasiCircle2 {
+  0% {
+    left: 50%;
+    right: -25.21%;
+    bottom: -45.24%;
+  }
+  33% {
+    left: 0%;
+    right: -25.21%;
+    bottom: -45.24%;
+  }
+  66% {
+    left: -35%;
+    right: -45.21%;
+    bottom: 10%;
+  }
+  100% {
+    left: 50%;
+    right: -25.21%;
+    bottom: -45.24%;
+  }
+}
+@keyframes animasiCircle3 {
+  0% {
+    left: -22.49%;
+    right: 52.14%;
+    top: 40.04%;
+    bottom: -29.94%;
+  }
+  33% {
+    left: -30%;
+    right: 42.14%;
+    top: -10.04%;
+    bottom: -39.94%;
+  }
+  66% {
+    left: 55.49%;
+    right: 42.14%;
+    top: -20%;
+    bottom: -19.94%;
+  }
+  100% {
+    left: -22.49%;
+    right: 52.14%;
+    top: 40.04%;
+    bottom: -29.94%;
+  }
+}
+
+.Home {
+  font-family: "Proxima_nova";
+  font-weight: regular;
+}
+
+.z-1 {
+  z-index: 1;
+}
+
+.z-2 {
+  z-index: 10;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.relative {
+  position: relative;
+}
+
+.bottom-right {
+  top: 0px;
+  right: 0px;
+}
+
+.section1 {
+  overflow: hidden;
+  position: relative;
+  height: 80vh;
+  min-width: 100vw;
+}
+
+.Home .bg1 {
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  height: 80vh;
+  position: absolute;
+  background: linear-gradient(45deg, #6cbdaa, rgb(139, 214, 234)) !important;
+}
+.circle1 {
+  animation-name: animasiCircle1;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+.circle2 {
+  animation-name: animasiCircle2;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+.circle3 {
+  animation-name: animasiCircle3;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+}
+.Home .bg1 .circle1 {
+  position: absolute;
+  -webkit-filter: blur(5rem);
+  filter: blur(5rem);
+  top: -10%;
+  left: -10%;
+  width: 80%;
+  height: 50%;
+
+  background: -webkit-radial-gradient(
+    at top left,
+    #7083bc 100%,
+    transparent 80%
+  ) !important;
+  background: radial-gradient(
+    at top left,
+    #7083bc 100%,
+    transparent 80%
+  ) !important;
+}
+
+.Home .bg1 .circle2 {
+  position: absolute;
+  -webkit-filter: blur(5rem);
+  filter: blur(5rem);
+  position: absolute;
+  left: 50%;
+  right: -25.21%;
+  bottom: -45.24%;
+  border-radius: 100%;
+  width: 80%;
+  height: 100%;
+  background: -webkit-radial-gradient(#005683 100%, transparent 80%) !important;
+  background: radial-gradient(#005683 100%, transparent 80%) !important;
+}
+
+.Home .bg1 .circle3 {
+  position: absolute;
+  -webkit-filter: blur(5rem);
+  filter: blur(5rem);
+  left: -22.49%;
+  right: 52.14%;
+  top: 40.04%;
+  bottom: -29.94%;
+  width: 80%;
+  height: 90%;
+  border-radius: 100%;
+  background: -webkit-radial-gradient(
+    circle at center,
+    #6bbdaa 100%,
+    transparent 80%
+  ) !important;
+  background: radial-gradient(
+    circle at center,
+    #6bbdaa 100%,
+    transparent 80%
+  ) !important;
+
+  /* background: -webkit-radial-gradient(circle at center, #005683 40%, transparent 80%);
+  background: radial-gradient(circle at center, #005683 40%, transparent 80%); */
+}
+/* .Home .bg1 .circle1 {
+  position: absolute;
+  filter: blur(5rem);
+  top: -10%;
+  left: -10%;
+  width: 80%;
+  height: 50%;
+  
+  background: radial-gradient(at top left, #7083bc 100%, transparent 80%) !important;
+}
+
+.Home .bg1 .circle2 {
+  position: absolute;
+  filter: blur(5rem);
+  position: absolute;
+  left: 50%;
+  right: -25.21%;
+  bottom: -45.24%;
+  border-radius: 100%;
+  width: 80%;
+  height: 100%;
+  background: radial-gradient(#005683 100%, transparent 80%) !important;
+}
+
+.Home .bg1 .circle3 {
+  position: absolute;
+  filter: blur(5rem);
+  left: -22.49%;
+  right: 52.14%;
+  top: 40.04%;
+  bottom: -29.94%;
+  width: 80%;
+  height: 90%;
+  border-radius: 100%;
+  background: radial-gradient(circle at center, #6bbdaa 100%, transparent 80%) !important;
+
+} */
+
+.ombakAtas {
+  width: 100%;
+  position: absolute;
+  z-index: 4;
+  bottom: 0px;
+  right: 0px;
+}
+
+.box-content1 {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -70%);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.logoPutih {
+  width: 80vw;
+}
+
+.taglinePutih {
+  width: 80vw;
+}
+
+.ranting_kiri {
+  opacity: 0.5;
+  position: absolute;
+  z-index: 2;
+  width: 22vw;
+  top: 5%;
+  left: 0px;
+}
+
+.ranting_kanan {
+  opacity: 0.5;
+  position: absolute;
+  z-index: 2;
+  width: 22vw;
+  top: 5%;
+  right: 0px;
+}
+
+/* .bunga_putar {
+  bottom: 10%;
+  rotate: 30deg;
+  left: 10%;
+  z-index: 2;
+  opacity: 50%;
+  width: 10%;
+  height: 10vw;
+}
+
+.bunga_putar_relative {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative !important;
+
+  width: 100%;
+  height: 100%;
+}
+
+.bagian_bunga1 {
+  width: 100%;
+  position: absolute;
+  bottom: -90%;
+}
+
+.bagian_bunga2 {
+  width: 100%;
+  position: absolute;
+  top: -90%;
+}
+
+.bagian_bunga3 {
+  width: 100%;
+  position: absolute;
+  left: 75%;
+}
+
+.bagian_bunga4 {
+  width: 100%;
+  position: absolute;
+  right: 75%;
+} */
+
+/* .kupu-kupu {
+  top: 30%;
+  left: 10%;
+  opacity: 0.5;
+} */
+
+.bungaPutih {
+  right: 0%;
+  bottom: 5%;
+  width: 30%;
+}
+
+.bungaPutih2 {
+  left: 0%;
+  bottom: 5%;
+  width: 30%;
+}
+
+.bungaPutih3 {
+  left: 2%;
+  top: 35%;
+  width: 10%;
+  opacity: 0.5;
+}
+
+.bungaPutih4 {
+  right: 13%;
+  top: 20%;
+  width: 10%;
+  opacity: 0.5;
+}
+
+@media only screen and (min-width: 512px) {
+  .logoPutih {
+    width: 45vw;
+  }
+
+  .taglinePutih {
+    margin-top: 6%;
+    width: 50vw;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  /* section 1 bg dan logo OMB */
+
+  .section1 {
+    min-height: 115vh;
+  }
+  .Home .bg1 {
+    height: 100vh !important;
+  }
+
+  .Home .bg1 .circle1 {
+    filter: blur(10rem);
+  }
+
+  .Home .bg1 .circle2 {
+    filter: blur(10rem);
+  }
+
+  .Home .bg1 .circle3 {
+    filter: blur(10rem);
+  }
+
+  .bungaPutih {
+    right: 0%;
+    bottom: 10%;
+    width: 20%;
+  }
+
+  .bungaPutih2 {
+    left: 0%;
+    bottom: 10%;
+    width: 20%;
+  }
+
+  .bungaPutih3 {
+    left: 2%;
+    top: 35%;
+    width: 8%;
+    opacity: 0.5;
+  }
+
+  .bungaPutih4 {
+    right: 13%;
+    top: 25%;
+    width: 8%;
+    opacity: 0.5;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .logoPutih {
+    width: 35vw;
+  }
+
+  .taglinePutih {
+    margin-top: 6%;
+    width: 35vw;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .logoPutih {
+    width: 25vw;
+  }
+}

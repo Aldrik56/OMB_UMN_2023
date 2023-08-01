@@ -1,0 +1,55 @@
+.Page30Juni {
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: fit-content;
+    overflow: hidden;
+    position: absolute;
+    z-index: -11;
+    gap:100px;
+    background: linear-gradient(45deg,#005683, #6cbdaa, rgb(139, 214, 234)) !important;
+    .wavemobile {
+      display: none;
+    }
+    
+    
+    @media (max-width:600px){
+      .wavemobile {
+        display: block;
+        width:100vw;
+        height:4000px;
+        position :absolute;
+        top:700px;
+        left: 0px;
+        z-index:-1;
+      }
+    }
+    @media (max-width:768px){
+      .wavemobile {
+        display: block;
+        width:100vw;
+        height:4000px;
+        position :absolute;
+        top:700px;
+        left: 0px;
+        z-index:-1;
+      }
+      // display: block;
+    }
+    @media (max-width:500px){
+      .wavemobile {
+        top:600px;
+      }
+    }
+    @media (max-width:450px){
+      .wavemobile {
+        top:600px;
+      }
+    }
+    @media (max-width:400px){
+      .wavemobile {
+        height:3000px;
+        top:600px;
+      }
+    }
+}

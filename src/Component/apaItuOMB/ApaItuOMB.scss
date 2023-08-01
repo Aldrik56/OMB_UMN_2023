@@ -1,0 +1,347 @@
+@font-face {
+    font-family: "Proxima_nova";
+    src: url("../../fonts/Proxima Nova Font.otf");
+}
+
+@font-face {
+    font-family: "Proxima_nova_bold";
+    src: url("../../fonts/Proxima Nova Bold.otf");
+}
+
+@font-face {
+    font-family: "Proxima_nova_thin";
+    src: url("../../fonts/Proxima Nova Thin.otf");
+}
+
+@font-face {
+    font-family: "Proxima_nova_extrabold";
+    src: url("../../fonts/Proxima\ Nova\ Extrabold.otf");
+}
+
+// @import "/Assets/Home/Group 25-ombak.png";
+
+#containerApaItuOMB{
+    position: relative;
+    // margin-top:100px;
+    padding-top:100px;
+    padding-bottom:100px;
+    // margin-bottom: 30px;
+    height: fit-content;
+    z-index: 1;
+    background-image: none;
+    background-size: 100% 1200px;
+    background-position-y:-20px ;
+    background-repeat: no-repeat;
+    // background-color: var(--omb-white);
+
+    #ombakAtasApaItuOMB{
+        display: none;
+    }
+    
+    .apaItuOMB {
+        padding: 3rem;
+        padding-bottom: 0;
+        position: relative;
+        gap: 15px;
+        z-index: -1;
+        // background-color: var(--omb-white); 
+    }
+    
+    .deskripsiOMB h1 {
+        color: var(--wild-blue-yonder, #7083BC);
+        font-size: 26px;
+        font-family: "Proxima_nova_extrabold";
+    }
+    
+    .deskripsiOMB p {
+        color: #005683;
+        font-size: 12px;
+        font-family: "Proxima_Nova";
+    }
+    
+    .videoOMB {
+        border-radius: 14.949px;
+        width: 100%;
+    }
+    
+    .assetIframe {
+        width: 100%;
+        height: 25vh;
+        border-radius: 14.949px;
+        background: #D9D9D9;
+        box-shadow: 0px 1.4948979616165161px 1.4948979616165161px 0px rgba(0, 0, 0, 0.25), -1.8686225414276123px -1.8686225414276123px 7.474490165710449px 0px rgba(255, 255, 255, 0.30);
+    }
+    
+    @media (min-width: 425px) {
+        .apaItuOMB{
+            
+        }
+    
+        .videoOMB {
+            width: 100%;
+        }
+        #ombakAtasApaItuOMB{
+            display: none;
+            // background-color: var(--omb-white);
+        }
+    
+        .assetIframe {
+            width: 100%;
+            height: 215px;
+            border-radius: 14.949px;
+            background: #D9D9D9;
+            box-shadow: 0px 1.4948979616165161px 1.4948979616165161px 0px rgba(0, 0, 0, 0.25), -1.8686225414276123px -1.8686225414276123px 7.474490165710449px 0px rgba(255, 255, 255, 0.30);
+        }
+    }
+    @media (min-width:600px){
+        #containerApaItuOMB {
+            position: relative;
+            margin-top:100px;
+            padding-top:100px;
+            // margin-bottom: 30px;
+            height: fit-content;
+            z-index: 1;
+            background-image: url("../../../public/Assets/Home/Group\ 25-ombak.png") !important;
+            background-size: 100% 1200px;
+            background-position-y:-20px ;
+            background-repeat: no-repeat;
+            // background-size: 100% 1200px;
+        }
+        #ombakAtasApaItuOMB{
+            display: block;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index:-3;
+            width: 100vw;
+            height:140vh;
+            // background-color: var(--omb-white);
+            margin-top: -15rem;
+        }
+    }
+    @media (min-width: 768px) {
+        #containerApaItuOMB{
+            position: relative;
+            margin-top: 10rem;
+        }
+    
+        #ombakAtasApaItuOMB{
+            display: block;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index:-3;
+            width: 100vw;
+            height:140vh;
+            // background-color: var(--omb-white);
+            margin-top: -15rem;
+        }
+        
+        .apaItuOMB {
+            display: flex;
+            gap: 32px;
+            padding: 4rem;
+            padding-bottom: 0;
+            padding-top: 0;
+            margin-bottom: 0;
+            margin-top: 0;
+        }
+    
+        .deskripsiOMB{
+            width: 50%;
+        }
+    
+        .deskripsiOMB h1 {
+            font-size: 24px;
+        }
+    
+        .deskripsiOMB p {
+            font-size: 13.5px;
+        }
+    
+        .videoOMB {
+            width: 50%;
+        }
+    
+        .assetIframe {
+            height: 171px;
+        }
+    }
+    
+    @media (min-width: 1024px) {
+        #ombakAtasApaItuOMB{
+            display: block;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index:-3;
+            width: 100vw;
+            height:140vh;
+            // background-color: var(--omb-white);
+            margin-top: -5rem;
+        }
+    
+        .apaItuOMB {
+            padding: 6rem;
+            padding-top: 12rem;
+            padding-bottom: 0;
+            gap: 64px;
+        }
+        
+        .deskripsiOMB{
+            width: 50%;
+        }
+    
+        .deskripsiOMB h1 {
+            font-size: 32px;
+        }
+    
+        .deskripsiOMB p {
+            font-size: 18px;
+        }
+    
+        .videoOMB {
+            width: 50%;
+        }
+    
+        .assetIframe {
+            height: 216px;
+        }
+    }
+    
+    @media (min-width: 1280px) {
+        #ombakAtasApaItuOMB{
+            display: block;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index:-3;
+            width: 100vw;
+            height:140vh;
+            // background-color: var(--omb-white);
+            margin-top: 2rem;
+        }
+        .apaItuOMB {
+            display: flex;
+            // padding-top: 28rem;
+            gap: 64px;
+        }
+        
+        .deskripsiOMB{
+            width: 50%;
+        }
+    
+        .deskripsiOMB h1 {
+            font-size: 40px;
+        }
+    
+        .deskripsiOMB p {
+            font-size: 23px;
+        }
+    
+        .videoOMB {
+            width: 50%;
+        }
+    
+        .assetIframe {
+            height: 312px;
+        }
+    }
+    
+    @media (min-width: 1440px) {
+        #ombakAtasApaItuOMB{
+            display: block;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index:-3;
+            width: 100vw;
+            height:140vh;
+            // background-color: var(--omb-white);
+            margin-top: -8rem;
+        }
+        .apaItuOMB {
+            padding: 8rem;
+            padding-top: 6rem;
+            padding-bottom: 0;
+            margin-bottom: 0;
+        }
+        
+        .deskripsiOMB{
+            width: 50%;
+        }
+    
+        .deskripsiOMB h1 {
+            font-size: 48px;
+        }
+    
+        .deskripsiOMB p {
+            font-size: 27px;
+        }
+    
+        .videoOMB {
+            width: 50%;
+        }
+    
+        .assetIframe {
+            /* width: 75%; */
+            height: 315px;
+        }
+    }
+    
+    @media (min-width: 2560px) {
+        .apaItuOMB {
+            padding: 15rem;
+            padding-top: 20rem;
+            padding-bottom: 5rem;
+            gap: 256px;
+        }
+        
+        .deskripsiOMB{
+            width: 50%;
+        }
+    
+        .deskripsiOMB h1 {
+            font-size: 64px;
+        }
+    
+        .deskripsiOMB p {
+            font-size: 36px;
+        }
+    
+        .videoOMB {
+            width: 50%;
+        }
+    
+        .assetIframe {
+            height: 558px;
+        }
+    }
+
+}
+@media (min-width : 768px){
+    #containerApaItuOMB {
+        position: relative;
+        // margin-top:100px;
+        padding-top:200px;
+        padding-bottom:0px;
+        // margin-bottom: 30px;
+        height: fit-content;
+        z-index: 1;
+        background-image: url("../../../public/Assets/Home/Group\ 25-ombak.png") !important;
+        background-size: 100% 1200px;
+        background-position-y:-20px ;
+        background-repeat: no-repeat;
+        // background-size: 100% 1200px;
+    }
+}

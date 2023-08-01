@@ -1,0 +1,136 @@
+.flex {
+  display: flex;
+}
+
+.catatanAtas {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+
+.header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header h1 {
+  font-family: "Proxima_bold";
+  text-align: center;
+  color: #7083bc;
+}
+
+.header p {
+  font-family: "Proxima_bold";
+  text-align: center;
+  font-weight: bold;
+  color: #7083bc;
+  font-size: 1.5rem;
+}
+
+.header hr {
+  width: 40%;
+  border: 1px solid #7083bc;
+}
+
+.textMengulang {
+  width: 60%;
+  text-align: center;
+  font-family: "Proxima_bold";
+  color: #7083bc;
+}
+
+.mySwiper {
+  padding: 3rem 0px;
+  width: 70%;
+  border-radius: 2rem;
+  background-color: rgba(231, 234, 235, 0.5);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+.scroll {
+  overflow-y: auto;
+  max-height: 700px;
+  display:flex;
+  flex-direction: row;
+  gap:20px;
+  font-size: 12px;
+}
+
+.mySwiper .title {
+  margin: 1rem 0px;
+  max-width: 50vw;
+  text-align: center;
+  font-family: "Proxima_bold";
+  font-size: 1.5rem;
+  padding: 1rem 3rem;
+  color: #e1e8ea;
+  border-radius: 2rem;
+  background: linear-gradient(#7083bc, #005683);
+}
+
+.slideMengulang {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.nama {
+  text-transform: capitalize !important;
+  font-family: "Proxima_nova_thin";
+  text-align: left;
+  font-weight: bold;
+  color: #005683;
+}
+
+.nim{
+  text-transform: capitalize !important;
+  font-family: "Proxima_nova_thin";
+  text-align: left;
+  font-weight: bold;
+  color: #005683;
+}
+
+.bungaBawah {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.garis {
+  margin: 0px;
+  width: 20vw;
+  height: 1px;
+  border-radius: 1rem;
+  opacity: 1;
+  border: 1px solid #005683;
+}
+
+.catatanBawah {
+  padding: 0px 10vw;
+}
+
+.catatanBawah p {
+  font-family: "Proxima_bold";
+  text-align: center;
+  color: #7083bc;
+}
+
+@media (min-width: 768px) {
+  .header hr {
+    width: 20%;
+  }
+
+  .bungaBawah hr {
+    width: 10vw;
+  }
+
+  .scroll{
+    font-size: 1rem;
+  }
+}

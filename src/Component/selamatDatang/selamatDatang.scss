@@ -1,0 +1,58 @@
+:root {
+    --font-extraBig:48px;
+    --font-big : 32px;
+    --font-medium : 20px;
+    --font-small : 16px;
+    --font-tiny : 12px;
+}
+.selamat_datang__section {
+    width:100vw;
+    height: fit-content;
+    display: flex;
+    gap:40px;
+    justify-content: center;
+    align-items: center;
+    margin-top:100px;
+}
+.selamat_datang__section div {
+    font-family: Proxima_nova;
+    height:100%;
+    width:600px;
+    color:var(--omb-white);
+}
+.selamat_datang__section h1{
+    font-size: var(--font-extraBig);
+    font-weight: 800;
+}
+.selamat_datang__section p {
+    font-size: var(--font-big);
+}
+.selamat_datang__section img {
+    width:400px;
+}
+@media (max-width:900px){
+    .selamat_datang__section {
+        display:flex;
+        flex-direction: column;
+    }
+    
+
+}
+@media (max-width:600px){
+    .selamat_datang__section {
+        display:flex;
+        flex-direction: column;
+    }
+    .selamat_datang__section img {
+        width:70vw;
+    }
+    .selamat_datang__section div {
+        width:70vw;
+    }
+    .selamat_datang__section h1 {
+        font-size: var(--font-big);
+    }
+    .selamat_datang__section p {
+        font-size: var(--font-medium);
+    }
+}

@@ -1,0 +1,276 @@
+
+
+:root {
+    --swiper-navigation-size: 38px;
+    --swiper-navigation-top-offset: 15%;
+    --swiper-navigation-sides-offset: 50px;
+    --font-extra-big : 32px;
+    --font-big : 25px;
+    --font-medium : 20px;
+    --font-small : 15px;
+    --font-tiny : 12px;
+    --font-EXtiny:10px;
+    --swiper-navigation-color: var(--omb-purple);
+}
+#grupAngkatanHome{
+    height: fit-content;
+    .swiper {
+        margin-top: 40px;
+        position: relative;
+        width:700px;
+        height: 350px; 
+        padding-top:40px;
+        border-radius: 40px;  
+        overflow: hidden;
+        z-index: 1;
+        color: var(--omb-purple);
+        background-color: var(--omb-white);
+        box-shadow: 4px 7px 5px #0000003f;
+    }
+    .groupAngkatan {
+        // margin-top: 60px;
+        // margin-left: 40px;
+        margin-top:19px;
+        z-index: 1;
+    }
+    .groupAngkatan__swiperControl {
+        background-color: none;
+        display:flex;
+        // margin:40px 00px 10px 0px;
+        justify-content: space-between;
+
+        // border: red solid 1px;
+    }
+    .groupAngkatan__swiperControl button {
+        background-color: transparent;
+        border:none;
+        padding:0px;
+
+        // border: red solid 1px;
+    }
+    .groupAngkatan__swiperControl img {
+        width:60.21px;
+
+        // border: red solid 1px;
+    }
+    
+    .swiper-slide {
+        display: flex;
+        height:100%;
+        // padding:50px;
+        // justify-content: end;
+        align-items: center;
+        flex-direction: column;
+    }
+    .swiper-slide div {
+        width:90%;
+    }
+    .swiper-slide h1 {
+        font-family: Proxima_nova;
+        font-weight: 800;
+        font-size:var(--font-extra-big);
+    }
+    .swiper-slide p {
+        font-size: var(--font-medium);
+    }
+    .groupAngkatan_bg{
+        position: absolute;
+        bottom:0px;
+        left:0px;
+        width:700px;
+        height:auto;
+    }
+    .groupAngkatan__masukGroup_button {
+        position: absolute;
+        bottom : 20px;
+        right:30px;
+        border:none;
+        border-radius: 20px;
+        width: 180px;
+        height:35px;
+        
+        background: linear-gradient(180deg, #7083bc 0%, #376c9f 88.54%, #005683 100%);
+      box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25), -5px -5px 20px #ffffff;
+    }
+    .groupAngkatan__masukGroup_button a {
+        text-decoration: none;
+        color:var(--omb-white);
+    }
+    // --swiper-navigation-top-offset: 20%;
+    // --swiper-navigation-sides-offset: 10px;
+    
+    @media(max-width:1000px){
+        .groupAngkatan__swiperControl img {
+            width:55.21px;
+    
+            // border: red solid 1px;
+        }
+        :root {
+            --swiper-navigation-top-offset: 20%;
+            --swiper-navigation-sides-offset: 30px;
+            --swiper-navigation-size: 34px;
+        }
+        .swiper {
+            width:620px;
+            height: 340px;
+            padding-top: 20px;
+        }
+        .groupAngkatan_bg{
+            // margin-bottom: -10px;
+            margin-bottom: 0px;
+            width:620px;
+            height:auto;
+        }
+        .groupAngkatan__masukGroup_button {
+            font-size: var(--font-medium);
+        }
+        .swiper-slide h1 {
+            margin:0px;
+            font-size: var(--font-big);
+        }
+    
+    }
+    
+    @media(max-width:900px){
+        .groupAngkatan__swiperControl img {
+            width:50.21px;
+    
+            // border: red solid 1px;
+        }
+        :root {
+            --swiper-navigation-top-offset: 20%;
+            --swiper-navigation-sides-offset: 20px;
+            --swiper-navigation-size: 34px;
+        }
+        .swiper {
+            width:500px;
+            height: 300px;
+            padding-top: 20px;
+        }
+        .groupAngkatan_bg{
+            // margin-bottom: -10px;
+            margin-bottom: 0px;
+            width:500px;
+            height:auto;
+        }
+        // .swiper-slide button {
+        //     font-size: var(--font-small);
+        // }
+        .swiper-slide h1 {
+            font-size: var(--font-big);
+        }
+    
+    }
+    @media (max-width:800px){
+        .swiper {
+            padding-top: 20px;
+        }
+        .groupAngkatan__swiperControl img {
+            width:45.21px;
+    
+            // border: red solid 1px;
+        }
+    }
+    
+    @media(max-width:600px){
+        :root {
+            --swiper-navigation-top-offset: 18%;
+            --swiper-navigation-sides-offset: 28px;
+            --swiper-navigation-size: 26px;
+        }
+        .groupAngkatan__swiperControl img {
+            width:40.21px;
+    
+            // border: red solid 1px;
+        }
+        .swiper {
+            width:70vw;
+            height:45vw;
+            padding-top:20px;
+            box-shadow: 1px 4px 7px 4px #0000003f;
+        }
+        .groupAngkatan_bg{
+            // margin-bottom: -10px;
+            margin-bottom: 0px;
+            width:70vw;
+            height:auto;
+        }
+        .groupAngkatan__masukGroup_button {
+            font-size: var(--font-small);
+        }
+        .swiper-slide h1 {
+            font-size: var(--font-medium);
+        }
+        .swiper-slide p {
+            font-size: var(--font-small);
+        }
+    
+    }
+    
+    @media(max-width:490px){
+        :root {
+            --swiper-navigation-top-offset: 20%;
+            --swiper-navigation-sides-offset: 20px;
+            --swiper-navigation-size: 20px;
+        }
+        .swiper {
+            width:70vw;
+            height:45vw;
+            box-shadow: 1px 4px 7px 4px #0000003f;
+        }
+        .swiper-slide p {
+            font-size: var(--font-tiny);
+        }
+        .groupAngkatan_bg{
+            // margin-bottom: -10px;
+            margin-bottom: 0px;
+            width:70vw;
+            height:auto;
+        }
+        .groupAngkatan__masukGroup_button {
+            width:120px;
+            // width:fit-content;
+            padding:2px 5px;
+            height:25px;
+            font-size: var(--font-tiny);
+            bottom:10px;
+            right:20px;
+        }
+        .swiper-slide a {
+            padding:2px 5px;
+            font-size:var(--font-tiny);
+        }
+        .swiper-slide h1 {
+            margin:0px;
+            font-size: var(--font-small);
+        }
+        .swiper-slide p {
+            font-size: var(--font-tiny);
+        }
+
+    
+    }
+    @media (max-width:400px){
+        .swiper {
+            height:47vw;
+        }
+        .groupAngkatan {
+            margin-top: 10px;
+        }
+        .groupAngkatan__swiperControl img {
+            margin-top:0px;
+            width:25px;
+    
+            // border: red solid 1px;
+        }
+        .swiper-slide h1 {
+            font-size: var(--font-small);
+        }
+        .swiper-slide p {
+            font-size: var(--font-EXtiny);
+        }
+        .swiper-slide a {
+            font-size:var(--font-EXtiny);
+        }
+    }
+}

@@ -1,0 +1,500 @@
+@font-face {
+  font-family: "Proxima_nova";
+  src: url("../../fonts/Proxima Nova Font.otf");
+}
+@font-face {
+  font-family: "Proxima_nova_bold";
+  src: url("../../fonts/Proxima Nova Bold.otf");
+}
+@font-face {
+  font-family: "Proxima_nova_thin";
+  src: url("../../fonts/Proxima Nova Thin.otf");
+}
+
+#mars {
+  .section2 {
+    background-color: #e1e8ea;
+    display: flex;
+    justify-content: center;
+    // margin-top: 5vw;
+    // margin-top: 21vw;
+    padding: 12vw 0;
+    gap:5vw;
+  }
+  .OMB {
+    z-index: 3;
+  }
+
+  // .UMN {
+  //   margin-right: 2.5vw;
+  // }
+
+  .audio {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    margin-top: 2vw;
+    z-index: 5;
+    // margin-left: auto;
+    // margin-right: auto;
+  }
+
+  audio {
+    z-index: 5;
+  }
+
+  .box-background {
+    background-image: linear-gradient(to bottom right, #7083bc, #6dbcab);
+    border-radius: 30px;
+    padding: 6px;
+    width: 42vw;
+    height: 85%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+    z-index: 3;
+  }
+
+  .box {
+    position: relative;
+    background-color: #e1e8ea;
+    border-radius: 30px;
+    padding: 1vw;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+  }
+
+  .background-judul {
+    background-image: linear-gradient(to bottom right, #7083bc, #6dbcab);
+    border-radius: 54px;
+    padding: 6px;
+    width: 85%;
+    margin: 1vw auto;
+    margin-top: -4vw;
+  }
+
+  .judul {
+    font-family: "Proxima_nova_bold";
+    text-align: center;
+    color: #005683;
+    font-size: 2.5vw;
+    background-color: #e1e8ea;
+    border-radius: 54px;
+    margin: auto auto;
+  }
+
+  .text {
+    font-family: "Proxima_nova";
+    text-align: center;
+    color: #7083bc;
+    line-height: 32px;
+  }
+
+  /* RESPONSIVE */
+
+  @media screen and (max-width: 1200px) {
+    .section2 {
+      background-color: #e1e8ea;
+      display: flex;
+      justify-content: center;
+      // margin-top: -5vw;
+      // margin-top: 21vw;
+      padding: 12vw 0;
+      gap:40px;
+    }
+
+    .box p.text{
+      font-size: 15px;
+    }
+  }
+
+  @media screen and (max-width: 1100px) {
+    .section2 {
+      background-color: #e1e8ea;
+      display: flex;
+      justify-content: center;
+      // margin-top: -8vw;
+      /* margin-top: 25vw; */
+      padding: 12vw 0;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    .section2 {
+      background-color: #e1e8ea;
+      display: flex;
+      justify-content: center;
+      // margin-top: 0vw;
+      // margin-top: 21vw;
+      padding: 12vw 0;
+    }
+  }
+
+  @media screen and (max-width: 952px) {
+    .section2 {
+      background-color: #e1e8ea;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      /* margin-top: 27vw; */
+      padding: 12vw 0;
+    }
+    .UMN {
+      margin-right: 2.5vw;
+    }
+    .box-background {
+      background-image: linear-gradient(to bottom right, #7083bc, #6dbcab);
+      border-radius: 30px;
+      padding: 6px;
+      width: 70vw;
+      margin: 1vw auto;
+      height: 85%;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+    }
+    .box {
+      background-color: #e1e8ea;
+      border-radius: 30px;
+      padding: 2vw;
+      width: 100%;
+      height: 100%;
+    }
+    .background-judul {
+      background-image: linear-gradient(to bottom right, #7083bc, #6dbcab);
+      border-radius: 54px;
+      padding: 6px;
+      width: 75%;
+      margin: 1vw auto;
+      margin-top: -4vw;
+    }
+    .judul {
+      font-family: "Proxima_nova_bold";
+      text-align: center;
+      color: #005683;
+      font-size: 2.3vw;
+      background-color: #e1e8ea;
+      border-radius: 54px;
+      margin: auto auto;
+    }
+    .text {
+      font-family: "Proxima_nova";
+      text-align: center;
+      color: #7083bc;
+      font-size: 1.5vw;
+      line-height: 28px;
+    }
+  }
+
+  @media screen and (max-width: 825px) {
+    .section2 {
+      background-color: #e1e8ea;
+      display: flex;
+      justify-content: center;
+      /* margin-top: 30vw; */
+      padding: 12vw 0;
+    }
+    .text {
+      font-family: "Proxima_nova";
+      text-align: center;
+      color: #7083bc;
+      font-size: 1.5vw;
+      line-height: 24px;
+    }
+  }
+
+  /* GANTI ATAS BAWAH */
+  @media screen and (max-width: 800px) {
+    .section2 {
+      background-color: #e1e8ea;
+      display: flex;
+      //flex-direction: column;
+      align-items: center;
+      // margin-top: 15vw;
+      padding: 12vw 0;
+    }
+    .UMN,
+    .OMB {
+      margin: 2vw auto;
+    }
+    .box-background {
+      background-image: linear-gradient(to bottom right, #7083bc, #6dbcab);
+      border-radius: 30px;
+      padding: 6px;
+      width: 80vw;
+      height: 85%;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+    }
+    .judul {
+      font-family: "Proxima_nova_bold";
+      text-align: center;
+      color: #005683;
+      font-size: 4vw;
+      background-color: #e1e8ea;
+      border-radius: 54px;
+      margin: auto auto;
+    }
+    .text {
+      font-family: "Proxima_nova";
+      text-align: center;
+      color: #7083bc;
+      font-size: 2vw;
+      line-height: 28px;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    .section2 {
+      background-color: #e1e8ea;
+      display: flex;
+      justify-content: center;
+      /* margin-top: 38vw; */
+      padding: 12vw 0;
+    }
+    .text {
+      font-family: "Proxima_nova";
+      text-align: center;
+      color: #7083bc;
+      font-size: 2vw;
+      line-height: 24px;
+    }
+  }
+
+  @media screen and (max-width: 650px) {
+    .section2 {
+      background-color: #e1e8ea;
+      display: flex;
+      justify-content: center;
+      /* margin-top: 22vw; */
+      padding: 12vw 0;
+    }
+
+    .text{
+      font-size: 1.5vw;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .section2 {
+      background-color: #e1e8ea;
+      display: flex;
+      justify-content: center;
+      /* margin-top: 22vw; */
+      padding: 12vw 0;
+    }
+    audio {
+      width: 250px;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .section2 {
+      background-color: #e1e8ea;
+      display: flex;
+      justify-content: center;
+      /* margin-top: 22vw; */
+      padding: 12vw 0;
+    }
+    .text {
+      font-family: "Proxima_nova";
+      text-align: center;
+      color: #7083bc;
+      font-size: 2.5vw !important;
+      line-height: 20px;
+    }
+    audio {
+      width: 200px;
+    }
+  }
+
+
+  // SUPERGRAFIS
+
+  .bunga {
+    position: absolute;
+    top: 56%;
+    left: -7%;
+    width: 22vw;
+    z-index: 1 !important;
+  }
+
+  .snowflake {
+    position: absolute;
+    top: 35%;
+    left: 86%;
+    width: 22vw;
+    z-index: 2;
+  }
+
+  /* RESPONSIVE SUPERGRAFIS */
+  @media screen and (max-width: 1500px) {
+    .bunga {
+      position: absolute;
+      top: 58%;
+      left: -7%;
+      width: 22vw;
+      z-index: 4;
+    }
+  }
+
+  @media screen and (max-width: 1200px) {
+    .bunga {
+      position: absolute;
+      top: 61%;
+      left: -7%;
+      width: 22vw;
+      z-index: 4;
+    }
+  }
+
+  @media screen and (max-width: 1050px) {
+    .bunga {
+      position: absolute;
+      top: 61%;
+      left: -7%;
+      width: 22vw;
+      z-index: 4;
+    }
+  }
+
+  @media screen and (max-width: 992px) {
+    .bunga {
+      position: absolute;
+      top: 61%;
+      left: -7%;
+      width: 22vw;
+      z-index: 4;
+    }
+
+    .snowflake {
+      position: absolute;
+      top: 30%;
+      left: 86%;
+      width: 22vw;
+      z-index: 2;
+    }
+  }
+
+  @media screen and (max-width: 991px) {
+    .bunga {
+      position: absolute;
+      top: 47%;
+      left: -7%;
+      width: 22vw;
+      z-index: 4;
+    }
+
+    .snowflake {
+      position: absolute;
+      top: 30%;
+      left: 86%;
+      width: 22vw;
+      z-index: 2;
+    }
+  }
+
+  @media screen and (max-width: 900px) {
+    .bunga {
+      position: absolute;
+      top: 47%;
+      left: -5%;
+      width: 18vw;
+      z-index: 4;
+    }
+
+    .snowflake {
+      position: absolute;
+      top: 30%;
+      left: 86%;
+      width: 18vw;
+      z-index: 2;
+    }
+  }
+
+  @media screen and (max-width: 850px) {
+    .bunga {
+      position: absolute;
+      top: 45%;
+      left: -7%;
+      width: 18vw;
+      z-index: 4;
+    }
+
+    .snowflake {
+      position: absolute;
+      top: 30%;
+      left: 86%;
+      width: 18vw;
+      z-index: 2;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .bunga {
+      position: absolute;
+      top: 50%;
+      left: -7%;
+      width: 28vw;
+      z-index: 4;
+    }
+
+    .snowflake {
+      position: absolute;
+      top: 24%;
+      left: 80%;
+      width: 28vw;
+      z-index: 2;
+    }
+  }
+
+  @media screen and (max-width: 700px) {
+    .bunga {
+      position: absolute;
+      top: 49%;
+      left: -7%;
+      width: 28vw;
+      z-index: 4;
+    }
+
+    .snowflake {
+      position: absolute;
+      top: 24%;
+      left: 80%;
+      width: 28vw;
+      z-index: 2;
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    .bunga {
+      position: absolute;
+      top: 50%;
+      left: -7%;
+      width: 28vw;
+      z-index: 4;
+    }
+
+    .snowflake {
+      position: absolute;
+      top: 22%;
+      left: 80%;
+      width: 28vw;
+      z-index: 2;
+    }
+  }
+
+  @media screen and (max-width: 500px) {
+    .bunga {
+      position: absolute;
+      top: 48%;
+      left: -7%;
+      width: 28vw;
+      z-index: 4;
+    }
+
+    .snowflake {
+      position: absolute;
+      top: 20%;
+      left: 80%;
+      width: 28vw;
+      z-index: 2;
+    }
+  }
+}

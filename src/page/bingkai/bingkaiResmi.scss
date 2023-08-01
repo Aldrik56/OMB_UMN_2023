@@ -1,0 +1,249 @@
+@import "./Step1.scss";
+@import "./Step2.scss";
+@import "./Step4.scss";
+
+#bingkai {
+  max-width: 100vw !important;
+  overflow: hidden !important;
+
+  .btn-lanjut {
+    cursor: pointer;
+    position: relative;
+    width: fit-content;
+    padding: 3px;
+    border-radius: 2rem;
+    background: var(--omb-purple);
+
+    span {
+      white-space: nowrap;
+      font-family: Proxima_bold;
+      color: var(--omb-purple);
+      // background: -webkit-linear-gradient(
+      //   90deg,
+      //   var(--omb-purple),
+      //   var(--omb-blue)
+      // );
+      // -webkit-background-clip: text;
+      // -webkit-text-fill-color: transparent;
+    }
+  }
+
+  .btn-gap {
+    gap: 1rem;
+  }
+
+  .head {
+    position: relative;
+    z-index: 0;
+    width: 100vw;
+  }
+
+  .prodi-btn > * {
+    cursor: pointer;
+    font-family: Proxima_thin;
+    color: var(--omb-dark-blue);
+    height: 2rem;
+  }
+
+  .prodi-btn {
+    min-height: 10rem;
+  }
+
+  .btn-foto {
+    color: var(--omb-white);
+    padding: 0.5rem 2rem;
+    text-align: center;
+    height: fit-content;
+    width: fit-content;
+    white-space: nowrap;
+    border: 0px;
+    border-radius: 2rem;
+    background-image: linear-gradient(
+      to left,
+      var(--omb-purple),
+      var(--omb-blue)
+    );
+  }
+
+  .btn-type2 {
+    white-space: nowrap;
+    padding: 0.5rem 2rem;
+    color: var(--omb-white);
+    font-family: Proxima_thin;
+    border-radius: 2rem;
+    width: fit-content;
+    height: fit-content;
+    background: linear-gradient(var(--omb-purple), var(--omb-dark-blue));
+  }
+
+  .container1 {
+    gap: 1rem;
+    flex-direction: column;
+  }
+
+  .container-1 {
+    flex-direction: row;
+  }
+
+  .flex-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .align-center {
+    display: flex;
+    align-items: center;
+  }
+
+  .flex-col {
+    flex-direction: column;
+  }
+
+  .bgCanvas {
+    background-position: "center";
+    background-repeat: "no-repeat";
+    background-size: "cover";
+    width: "30rem";
+    height: "30rem";
+  }
+
+  .flex {
+    display: flex;
+  }
+
+  .relative {
+    position: relative;
+  }
+
+  #s_1 {
+    padding: 10%;
+    background: var(--omb-white);
+    color: var(--omb-dark-blue);
+    display: flex;
+
+    div {
+      width: 70%;
+    }
+
+    h2 {
+      font-family: Proxima_bold;
+    }
+
+    span {
+      font-family: Proxima_thin;
+    }
+
+    img {
+      width: 30%;
+    }
+
+    @media only screen and (min-width: 768px) {
+      div {
+        width: 50%;
+      }
+
+      img {
+        width: auto;
+        color: var(--omb-purple);
+      }
+    }
+  }
+
+  #s_2 {
+    min-height: 50vh;
+    padding: 2% 10% 10% 10%;
+    position: relative;
+    background: var(--omb-white);
+
+    h1 {
+      color: var(--omb-purple);
+      font-family: Proxima_bold;
+    }
+
+    .progress-bar {
+      margin-bottom: 2rem;
+      padding: 5px;
+      height: 2rem;
+      width: 100%;
+      box-shadow: 10px 10px 15px 0px rgba(0, 0, 0, 0.1),
+        5px 0px 20px 0px rgba(0, 0, 0, 0.1) inset;
+      border-radius: 2rem;
+      .progress {
+        transition: 1s;
+
+        background-color: var(--omb-purple);
+        height: 10rem;
+        border-radius: 2rem;
+      }
+    }
+
+    .bgCanvas {
+      width: 100%;
+      height: auto;
+      aspect-ratio: 1/1;
+    }
+
+    .active-prodi {
+      color: var(--omb-purple);
+      font-family: Proxima_bold;
+    }
+
+    .active-prodi::before {
+      content: "|";
+      color: var(--omb-purple);
+      margin-right: 0.5rem;
+    }
+
+    .b1 {
+      position: absolute;
+      top: 0%;
+      right: 0px;
+      width: 20%;
+    }
+
+    .b2 {
+      position: absolute;
+      bottom: 0%;
+      right: 0px;
+      width: 20%;
+    }
+  }
+
+  @media only screen and (min-width: 1028px) {
+    .container1 {
+      flex-direction: row;
+    }
+
+    .container-1 {
+      flex-direction: column;
+    }
+
+    #s_2 {
+      .bgCanvas {
+        width: 100%;
+        height: fit-content;
+        max-width: 30rem;
+        aspect-ratio: 1/1;
+      }
+
+      .progress-bar {
+        width: 80%;
+      }
+
+      .b1 {
+        position: absolute;
+        top: -20%;
+        right: 0px;
+        width: 20%;
+      }
+
+      .b2 {
+        position: absolute;
+        bottom: -10%;
+        right: 0px;
+        width: 20%;
+      }
+    }
+  }
+}

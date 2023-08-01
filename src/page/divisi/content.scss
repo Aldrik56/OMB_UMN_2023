@@ -1,0 +1,105 @@
+@font-face {
+  font-family: "Proxima_nova";
+  src: url("../../fonts/Proxima Nova Font.otf");
+}
+@font-face {
+  font-family: "Proxima_nova_bold";
+  src: url("../../fonts/Proxima Nova Bold.otf");
+}
+@font-face {
+  font-family: "Proxima_nova_thin";
+  src: url("../../fonts/Proxima Nova Thin.otf");
+}
+
+.content_divisi {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-color: #e1e8ea;
+
+  h6 {
+    text-align: center;
+    color: #005683;
+    font-size: 1.25rem;
+    margin-bottom: 70px;
+    font-family: Proxima_nova;
+  }
+
+  .first_row {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .second_row {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .third_row {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    gap: 15px;
+  }
+
+  .row_item img {
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0.1);
+    width: 200px;
+    height: auto;
+    transition: scale 1s;
+  }
+  .row_item img:hover {
+    cursor: pointer;
+    scale: 1.05;
+  }
+  /* .row-item:hover {
+        cursor: pointer;
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(0,0,0,0.19), 0 6px 6px rgba(0,0,0,0.23);
+    } */
+
+  @media screen and (max-width: 850px) {
+    .first_row {
+      flex-direction: column;
+      gap: 10px;
+    }
+    .second_row {
+      flex-direction: column;
+      gap: 10px;
+    }
+    .third_row {
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    h6 {
+      font-size: 0.9rem;
+      margin-bottom: 70px;
+    }
+    .content {
+      padding-top: 70px;
+      padding-bottom: 100px;
+      background-color: #e1e8ea;
+    }
+  }
+
+  /* @media screen and (max-width: 1450px) {
+        .first-row, .second-row, .third-row {
+            grid-template-columns: auto auto;
+        }
+    }
+    
+    @media screen and (max-width: 767px) {
+        h6 {
+            font-size: 1.125rem;
+        }
+        .first-row, .second-row, .third-row {
+            grid-template-columns: auto;
+        }
+    } */
+}

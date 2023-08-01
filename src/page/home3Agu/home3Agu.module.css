@@ -1,0 +1,235 @@
+.wave-atas {
+    width: 100%;
+}
+
+.info {
+    margin-top: -50px;
+    background-color: #F2F2F5;
+    position: relative;
+}
+
+.kupu {
+    position: absolute;
+    top: 80px;
+    left: -50px;
+    width: 40%;
+}
+
+.putik {
+    position: absolute;
+    width: 50%;
+    bottom: -50px;
+    right: -50px;
+}
+
+.apa {
+    position: relative;
+}
+
+.bunga {
+    position: absolute;
+    top: -40px;
+    left: -50px;
+    width: 50%;
+}
+
+.pohon {
+    position: absolute;
+    bottom: 100px;
+    right: 0;
+    width: 40%;
+    z-index: -1;
+}
+
+.swara {
+    margin-top: -10px;
+}
+
+.wave-tengah {
+    margin-top: -40px;
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .kupu {
+        width: 20%;
+        left: -60px;
+    }
+
+    .info {
+        margin-top: -100px;
+    }
+
+    .putik {
+        width: 40%;
+        bottom: -90px;
+        right: -60px;
+    }
+
+    .wave-tengah {
+        margin-top: -80px;
+        width: 100%;
+    }
+
+    .bunga {
+        top: -40px;
+        left: -80px;
+        width: 30%;
+    }
+
+    .pohon {
+        bottom: 100px;
+        right: 0;
+        width: 30%;
+    }
+
+    .swara {
+        margin-top: -50px;
+    }
+}
+
+@media (min-width: 1024px) {
+    .kupu {
+        top: 80px;
+        left: 0px;
+        width: 15%;
+    }
+
+    .info {
+        margin-top: -150px;
+    }
+
+    .putik {
+        width: 30%;
+        bottom: -90px;
+        right: -40px;
+    }
+
+    .wave-tengah {
+        margin-top: -100px;
+        width: 100%;
+    }
+
+    .bunga {
+        top: -80px;
+        left: -120px;
+        width: 30%;
+    }
+
+    .pohon {
+        bottom: 100px;
+        right: 0;
+        width: 20%;
+        z-index: -1;
+    }
+}
+
+@media (min-width: 1280px) {
+    .kupu {
+        left: 10px;
+    }
+
+    .info {
+        margin-top: -200px;
+    }
+
+    .putik {
+        width: 25%;
+        bottom: -120px;
+        right: -50px;
+    }
+
+    .wave-tengah {
+        margin-top: -120px;
+        width: 100%;
+    }
+}
+
+@media (min-width: 1440px) {
+    .kupu {
+        top: 90px;
+        left: 60px;
+        width: 15%;
+    }
+
+    .info {
+        margin-top: -250px;
+    }
+
+    .putik {
+        width: 25%;
+        bottom: -120px;
+        right: -50px;
+    }
+
+    .wave-tengah {
+        margin-top: -140px;
+        width: 100%;
+    }
+
+    .bunga {
+        top: -150px;
+        left: -150px;
+        width: 30%;
+    }
+
+    .pohon {
+        bottom: 150px;
+        right: 0;
+        width: 25%;
+        z-index: -1;
+    }
+}
+
+@media (min-width: 1920px) {
+    .kupu {
+        top: 120px;
+        left: 90px;
+    }
+
+    .putik {
+        width: 25%;
+        bottom: -220px;
+        right: -80px;
+    }
+
+    .wave-tengah {
+        margin-top: -190px;
+        width: 100%;
+    }
+}
+
+@media (min-width: 2560px) {
+    .kupu {
+        top: 150px;
+        left: 120px;
+    }
+
+    .info {
+        margin-top: -300px;
+    }
+
+    .putik {
+        width: 25%;
+        bottom: -290px;
+        right: -150px;
+    }
+
+    .wave-tengah {
+        margin-top: -240px;
+        width: 100%;
+    }
+
+    .bunga {
+        top: -250px;
+        left: -200px;
+        width: 20%;
+    }
+
+    .pohon {
+        bottom: 50px;
+        right: 0;
+        width: 20%;
+        z-index: -1;
+    }
+}

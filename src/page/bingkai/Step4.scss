@@ -1,0 +1,30 @@
+#bingkai #s_2 .step4 {
+  .text-box {
+    width: 100%;
+    font-family: Proxima_thin;
+    color: var(--omb-dark-blue);
+    border-radius: 2rem;
+    padding: 1rem;
+    box-shadow: -10px -10px 10px 0px rgba(255, 255, 255, 0.5) inset,
+      10px 10px 10px 0px rgba(0, 0, 0, 0.1) inset,
+      10px 10px 10px 0px rgba(0, 0, 0, 0.1);
+  }
+
+  .alert-animate {
+    top: 1rem;
+    animation: alertAnim 0.2s ease-in;
+  }
+
+  @keyframes alertAnim {
+    0% {
+      top: -5rem;
+    }
+    100% {
+      top: 1rem;
+    }
+  }
+
+  @media only screen and (min-width: 1028px) {
+    width: 50vw;
+  }
+}

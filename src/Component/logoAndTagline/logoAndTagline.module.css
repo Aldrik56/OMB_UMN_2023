@@ -1,0 +1,90 @@
+@media (min-width: 100px) {
+    .logo {
+      flex-direction: column !important;
+      gap: 20px !important;
+    }
+    .logoPutih {
+      width: 55vw !important;
+      height: auto !important;
+    }
+    .taglinePutih {
+      width: 70vw !important;
+      height: auto !important;
+    }
+  }
+@media (min-width: 300px) {
+  .logo {
+    flex-direction: column !important;
+    gap: 20px !important;
+  }
+  .logoPutih {
+    width: 55vw !important;
+    height: auto !important;
+  }
+  .taglinePutih {
+    width: 70vw !important;
+    height: auto !important;
+  }
+}
+@media (min-width: 700px) {
+  .logo {
+    margin-top: 10vh !important;
+  }
+}
+@media (min-width: 800px) {
+  .logo {
+    margin-top: 0vh !important;
+    gap: 40px !important;
+    flex-direction: row !important;
+  }
+  .logoPutih {
+    width: 32vw !important;
+    height: auto;
+  }
+  .taglinePutih {
+    width: 52vw !important;
+    height: auto;
+  }
+}
+
+@media (min-width: 1000px) {
+  .logo {
+    margin-top: 15vh !important;
+    margin-bottom: 10vh !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .logo {
+    display: flex !important;
+    height: 60vh !important;
+    gap: 67px !important;
+    align-items: center;
+    justify-content: center;
+    /* flex-direction: column; */
+  }
+  .logoPutih {
+    width: 26.93vw !important;
+    height: auto;
+  }
+  .taglinePutih {
+    width: 46.83vw !important;
+    height: auto;
+  }
+}
+.logo {
+  display: flex;
+  height: auto;
+  gap: 67px;
+  align-items: center;
+  justify-content: center;
+  /* flex-direction: column; */
+}
+.logoPutih {
+  width: 26.93vw;
+  height: auto;
+}
+.taglinePutih {
+  width: 46.83vw;
+  height: auto;
+}

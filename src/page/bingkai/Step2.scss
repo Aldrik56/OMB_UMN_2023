@@ -1,0 +1,29 @@
+#bingkai #s_2 .step2 {
+  .edit-btn {
+    width: 4rem;
+  }
+
+  .btn-arrow-gap {
+    gap: 4rem;
+  }
+
+  .container1 {
+    flex-direction: column-reverse;
+  }
+
+  @media only screen and (min-width: 768px) {
+    .edit-btn {
+      width: 6rem;
+    }
+
+    .btn--arrow-gap {
+      gap: 6rem;
+    }
+  }
+
+  @media only screen and (min-width: 1028px) {
+    .container1 {
+      flex-direction: row;
+    }
+  }
+}

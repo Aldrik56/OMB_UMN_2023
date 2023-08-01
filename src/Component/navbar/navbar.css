@@ -1,0 +1,250 @@
+@media (min-width: 300px) {
+  .logoNavbar {
+    width: 12vw !important;
+    height: auto;
+  }
+  .navbar-menu {
+    font-size: 3vw !important;
+  }
+
+  /* DROPDOWN */
+  .navbar-dropdown-button {
+    font-size: 3vw !important;
+  }
+
+  .navbar-hamburger-button {
+    font-size: 7vw;
+  }
+}
+@media (min-width: 800px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5vw 1.5vw;
+    background-color: #7083bc;
+  }
+
+  .logoNavbar {
+    width: 10vw !important;
+  }
+
+  .navbar-kanan {
+  }
+
+  .navbar-menu {
+    color: #e1e8ea;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 2vw !important;
+    font-family: "Proxima_nova";
+    margin-right: 1vw;
+    padding: 0.2vw;
+  }
+
+  /* DROPDOWN */
+  .navbar-dropdown-button {
+    background-color: transparent;
+    color: #e1e8ea;
+    font-size: 2vw !important;
+    font-family: "Proxima_nova";
+    border: none;
+  }
+}
+@media (min-width: 1200px) {
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 1vw 1vw !important;
+  }
+
+  .logoNavbar {
+    width: 5vw !important;
+  }
+
+  .navbar-kanan {
+  }
+
+  .navbar-menu {
+    color: #e1e8ea;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 1vw !important;
+    font-family: "Proxima_nova";
+    margin-right: 1vw;
+    padding: 0px !important;
+  }
+
+  /* DROPDOWN */
+  .navbar-dropdown-button {
+    background-color: transparent;
+    color: #e1e8ea;
+    font-size: 1.5vw !important;
+    font-family: "Proxima_nova";
+    border: none;
+  }
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5vw 1.5vw;
+  background-color: #7083bc;
+  /* background: #7083BC; */
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+  z-index: 99;
+}
+
+.navbar-mobile {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .navbar-kanan {
+    display: none;
+  }
+  .navbar-mobile {
+    display: block;
+  }
+  .logoNavbar {
+    width: 5vw;
+    /* margin-left: 2.5vw !important; */
+  }
+}
+
+.logoNavbar {
+  width: 5vw;
+  /* margin-left: 1vw; */
+}
+
+.navbar-kanan {
+}
+
+.navbar-menu {
+  color: #e1e8ea;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 1vw;
+  font-family: "Proxima_nova";
+  margin-right: 1.5vw;
+  padding: 0.2vw;
+}
+
+/* DROPDOWN */
+
+.navbar-dropdown-button {
+  background-color: transparent;
+  color: #e1e8ea;
+  font-size: 1.5vw;
+  padding: 1.4vw;
+  font-family: "Proxima_nova";
+  border: none;
+}
+
+.navbar-dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.navbar-dropdown-content {
+  /* display: none; */
+  position: absolute;
+  /* right: 30%; */
+  color: white;
+  background-color: #7083bc;
+  min-width: 160px;
+  width: 250px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+#tentang {
+  right: 64%;
+}
+
+#informasi {
+  right: 45%;
+}
+
+.navbar-content {
+  color: #e1e8ea;
+  font-family: "Proxima_nova";
+  padding: 12px 16px;
+  text-decoration: none;
+  font-size: 1.5vw;
+}
+
+.navbar-dropdown-content a {
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.navbar-dropdown-content a:hover {
+  background-color: rgb(84, 106, 174);
+}
+
+/* .navbar-dropdown:hover .navbar-dropdown-content {display: block;} */
+
+/* .navbar-dropdown:hover .navbar-dropdown-button {background-color: rgb(84, 106, 174);} */
+
+/* HAMBURGER */
+.navbar-hamburger-button {
+  background-color: transparent;
+  border: 0;
+  font-family: "Proxima_nova";
+  font-size: 5.5vw;
+  margin-right: 1.5vw;
+  color: white;
+}
+
+.navbar-mobile a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 2.2vw;
+  display: block;
+}
+
+.navbar-mobile a:hover {
+  background-color: rgb(84, 106, 174);
+}
+
+.navbar-hamburger-content {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  background-color: #7083bc;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+/* DROPDOWN MOBILE */
+.navbar-mobile-dropdown {
+}
+
+.navbar-mobile-content {
+  color: #e1e8ea;
+  font-family: "Proxima_nova";
+  padding: 12px !important;
+  text-decoration: none;
+  font-size: 3vw !important;
+}
+
+.navbar-mobile-dropdown-button {
+  color: white;
+  font-size: 3vw;
+  padding: 12px;
+  /* margin-left: 2.5vw; */
+  background-color: transparent;
+  border: 0;
+}
+
+.navbar-mobile-dropdown-content {
+  /* margin-left: 1.8vw; */
+}
+
+.navbar-mobile-dropdown-content > a {
+  font-size: 3vw;
+  padding: 10px 12px;
+  margin-left: 2.5vw;
+}

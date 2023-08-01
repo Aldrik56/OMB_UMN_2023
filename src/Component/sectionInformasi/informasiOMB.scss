@@ -1,0 +1,134 @@
+@font-face {
+  font-family: "Proxima_nova";
+  src: url("../../fonts/Proxima Nova Font.otf");
+}
+@font-face {
+  font-family: "Proxima_nova_bold";
+  src: url("../../fonts/Proxima Nova Bold.otf");
+}
+@font-face {
+  font-family: "Proxima_nova_thin";
+  src: url("../../fonts/Proxima Nova Thin.otf");
+}
+
+.informasiOMB {
+  margin-top: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  background-color: rgba(255, 12, 12, 0);
+  overflow: hidden;
+
+  .selengkapnya a{
+    text-decoration: none;
+  }
+
+  .apaItuOmb {
+    margin: 0 auto;
+    display: flex;
+
+    justify-content: center;
+  }
+  .apaItuOmb > div {
+    width: 80vw;
+    display: flex;
+    gap: 10vw;
+    /* flex-direction:row; */
+  }
+  .apaItuOmb > div > div {
+    width: 40vw;
+    /* flex-direction:row; */
+  }
+  .trapesium {
+    position: absolute;
+    content: " ";
+    z-index: -1;
+    border-right: 100vw solid #e1e8ea;
+    border-bottom: 10vh solid transparent;
+    border-top: 10vh solid transparent;
+    height: 100vh;
+    width: 50vw;
+  }
+
+  .assetApaItuOmb {
+    width: 771px;
+    height: 434px;
+    background-color: #d9d9d9;
+  }
+
+  .suratIzinOrtu {
+    height: 100vh;
+    width: 80%;
+    margin-top: 150px;
+    font-family: "Proxima_nova";
+    font-weight: 700;
+    font-size: 30px;
+    color: #005683;
+    text-align: center;
+  }
+  .suratIzinOrtu button {
+    width: 571px;
+    height: 85px;
+    left: calc(50% - 571px / 2 - 0px);
+    top: 481px;
+    color: #e1e8ea;
+    font-family: "Proxima_nova";
+    font-weight: 800;
+    border-radius: 40px;
+    border: 0px solid red;
+    background: linear-gradient(
+      180deg,
+      #7083bc 0%,
+      #376c9f 88.54%,
+      #005683 100%
+    );
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.25), -5px -5px 20px #ffffff;
+  }
+
+  .deskripsiApaItuOmb h1 {
+    font-family: "Proxima_nova" !important;
+    font-weight: 800;
+    color: #e1e8ea;
+  }
+  .deskripsiApaItuOmb p {
+    font-family: "Proxima_nova" !important;
+    font-weight: 400;
+    color: #e1e8ea;
+  }
+
+  .show {
+    display: block;
+  }
+
+  .hidden {
+    display: none;
+  }
+}
+@media only screen and (max-width: 512px) {
+  .suratIzinOrtu p {
+    font-size: 16px;
+  }
+  .suratIzinOrtu button {
+    height: 50px;
+    width: 70%;
+    font-size: 16px;
+  }
+  .apaItuOmb > div {
+    display: inline;
+    width: auto;
+  }
+  .deskripsiApaItuOmb h1 {
+    padding-top: 2rem;
+  }
+  .deskripsiApaItuOmb p {
+    font-size: 14px;
+  }
+  .apaItuOmb > div > div{
+    width: 80vw;
+    text-align: center;
+  }
+  .assetApaItuOmb iframe {
+  width: auto;
+  }
+}

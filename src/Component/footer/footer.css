@@ -1,0 +1,187 @@
+@font-face {
+    font-family: "Proxima_nova";
+    src: url("../../fonts/Proxima Nova Font.otf");
+}
+@font-face {
+    font-family: "Proxima_nova_bold";
+    src: url("../../fonts/Proxima Nova Bold.otf");
+}
+@font-face {
+    font-family: "Proxima_nova_thin";
+    src: url("../../fonts/Proxima Nova Thin.otf");
+}
+
+#footer{
+	font-family: Proxima_nova;
+	/* margin-top:20vh; */
+	display: flex;
+	background: #f7f7f7;
+    padding: 3rem;
+	padding-top: 2.5rem;
+    padding-bottom: 1rem;
+    background-color: #7083BC;
+	color: #FFFF;
+	z-index: 5;
+	position: relative;
+}
+
+.footer-one{
+	display: flex;
+	margin-top: 50px;
+	margin-bottom: 30px;
+	text-align: left;
+}
+
+.footer-two{
+	display: flex;
+	margin:auto;
+	align-self: center;
+}
+.footer-three{
+	display: flex;
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.tengah{
+	margin:auto;
+}
+
+.logoFooter{
+	width: 275px;
+	height: auto;
+	text-align: center;
+}
+
+.kanan{
+	margin-top: 0%;
+	text-align: left;
+	/* padding-left: 30%; */
+	padding-right: 0;
+}
+
+.kanan h4, p{
+	margin-right: 0;
+}
+
+.p{
+	font-size: 15px;
+}
+
+.h4{
+	font-family: Proxima_nova_bold;
+	font-size: 24px;
+	font-weight: bold !important;
+}
+.h6{
+	font-size: 12px;
+}
+
+.pranala{
+	margin-top: 12%;
+}
+
+.kontak{
+	margin-bottom: 45px;
+}
+#palingBawah {
+	position: relative;
+	z-index:5;
+}
+.copyrightWiskira{
+	padding: 1.8rem 1.8rem 0.5rem;
+	z-index: 5;
+    background: #7083BC;
+    color: #fff;
+    text-align: center;
+	font-size: 12px !important;
+}
+
+.col-lg-4:nth-child(1) {
+	order: 2 ;
+  }
+  
+  .col-lg-4:nth-child(2) {
+	order: 1 ;
+  }
+  
+  .col-lg-4:nth-child(3) {
+	order: 3 ;
+  }
+
+.row{
+	display: flex;
+	justify-content: space-around;
+}
+
+h4{
+	margin-bottom: 0;
+}
+/* responsive */
+
+@media only screen and (min-width: 120px) {
+	.p{
+		font-size: 16px;
+	}
+	.h4{
+		font-size: 28px;
+	}
+	.h6{
+		font-size: 12px;
+	}
+	.logoFooter{
+		width: 95%;
+	}
+}
+
+@media only screen and (min-width: 420px) {
+	.p{
+		font-size: 16px;
+	}
+	.h4{
+		font-size: 28px;
+	}
+	.h6{
+		font-size: 12px;
+	}
+}
+@media only screen and (min-width: 512px) {
+	#footer {
+		text-align: center;
+	}
+	.p{
+		font-size: 16px;
+	}
+}
+
+@media only screen and (min-width: 513px) {
+	
+	
+  }
+  
+@media only screen and (min-width: 768px) {
+	.logoFooter{
+		font-size: 16px;
+	}
+
+}
+  
+@media only screen and (min-width: 992px) {
+	.p{
+		font-size: 16px;
+	}
+	.kanan{
+		padding-left:70px;
+	}
+	.col-lg-4:nth-child(1) {
+		order: 1;
+	  }
+	  
+	  .col-lg-4:nth-child(2) {
+		order: 2;
+	  }
+	  
+	  .col-lg-4:nth-child(3) {
+		order: 3;
+	  }
+}

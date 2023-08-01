@@ -1,0 +1,317 @@
+@font-face {
+  font-family: 'Proxima_nova';
+  src: url("../../fonts/Proxima Nova Font.otf");
+}
+@font-face {
+  font-family: 'Proxima_nova_bold';
+  src: url("../../fonts/Proxima Nova Bold.otf");
+}
+@font-face {
+  font-family: 'Proxima_nova_thin';
+  src: url("../../fonts/Proxima Nova Thin.otf");
+}
+
+body{
+  font-family: "Proxima_nova";
+}
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.gap {
+  gap: 10px;
+}
+
+.justify-content-center {
+  justify-content: center;
+}
+
+.align-items-center {
+  align-items: center;
+}
+
+.relative {
+  position: relative;
+}
+
+.section2 {
+  padding-top: 5rem;
+  min-width: 100vw;
+  min-height: 100vh;
+  background-color: #e1e8ea;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100vw;
+}
+
+.header p {
+  position: relative;
+  padding: 1rem 3rem;
+  text-align: center;
+  font-size: 1.2rem;
+  background-color: #E1E8EA;
+  font-family:"Proxima_nova_bold";
+  color: #7083bc;
+  font-weight:bold;
+  width: 60%;
+  box-shadow: 8px 8px 10px 0px rgba(0, 0, 0, 0.25),
+    -8px -8px 10px 0px rgba(255, 255, 255, 0.5);
+  border-radius: 10rem;
+}
+
+.tanggal {
+  position: relative;
+  padding: 1rem;
+  display: flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+}
+
+.tanggal h5 {
+  text-align: center;
+  color: #005683;
+  font-size: 1.2rem;
+  margin: 0px;
+  font-family: "Proxima_nova_bold";
+}
+
+.tanggal p {
+  text-align: center;
+  color: #005683;
+  margin: 0 !important;
+  font-size: 1rem;
+  /* font-weight:"" */
+}
+
+.ketentuan {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.ketentuan .judul {
+  text-align: center;
+  font-size: 1.2rem;
+  color: #7083bc;;
+  font-family: "proxima_nova_bold";
+  width: 100vw;
+}
+
+.ketentuan .list_ketentuan {
+  flex-direction: column;
+  width: 70%;
+  border: 3px solid #005683;
+  border-radius: 2rem;
+  padding: 2rem;
+  color: #005683;
+  position: relative;
+}
+
+.ketentuan hr {
+  margin: 0px 1.2rem;
+  background-color: #005683;
+  border: none;
+  width: 8px;
+  border-radius: 2rem;
+}
+
+
+.button_daftar {
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button_daftar button {
+  margin: 0px 2rem;
+  color: #e1e8ea;
+  width: 60vw;
+  height: 5rem;
+  border-radius: 6rem;
+  border: none;
+  font-weight:bold;
+  font-size: 4vw;
+
+  background: linear-gradient(#7083bc, #376c9f, #005683);
+}
+.button_daftar button:hover {
+  transform: scale(0.95);
+}
+
+.bungakiri {
+  width: 15vw;
+  position: absolute;
+  left: 0px;
+  top: 0%;
+}
+
+.bungakanan {
+  width: 15vw;
+  position: absolute;
+  right: 0px;
+  top: 0%;
+}
+
+.kupuBiru {
+  top: -5%;
+  left: -10%;
+  width: 10%;
+  display: none;
+}
+
+.kupuBiru2 {
+  rotate: -20deg;
+  scale: -1 1;
+  top: -50%;
+  right: -5%;
+  width: 10%;
+  z-index: 5 !important;
+}
+@media only screen and (min-width : 520px){
+  .header p {
+    font-size : 1.5rem;
+  }
+  .tanggal h5 {
+    font-size: 1.4rem;
+
+  }
+  
+  .tanggal p {
+    font-size: 1.2rem;
+    /* font-weight:"" */
+  }
+}
+@media only screen and (min-width: 768px) {
+  .header p {
+    font-size: 2.5rem;
+    width: 60%;
+  }
+  .button_daftar {
+    height: 40vh;
+  }
+  .ketentuan .judul {
+    text-align: center;
+    font-size: bold;
+    color: #7083bc;
+    font-family:"Proxima_nova_bold";
+    font-size: 2.5rem;
+    width: 100%;
+  }
+
+  .ketentuan .list_ketentuan {
+    flex-direction: row;
+    width: 60%;
+    border: 3px solid #005683;
+    border-radius: 2rem;
+    padding: 2rem;
+
+    color: #005683;
+  }
+  .tanggal {
+    flex-direction:row !important;
+  }
+
+  .tanggal h5 {
+    text-align: center;
+    color: #005683;
+    font-size: 1.8rem;
+    margin: 0px;
+    font-family:"Proxima_nova_bold";
+  }
+
+  .tanggal p {
+    text-align: center;
+    color: #005683;
+    margin: 0 !important;
+    font-size: 1.5rem;
+    font-family: "Proxima_nova_thin";
+  }
+
+  .button_daftar button {
+    margin: 0px 2rem;
+    color: #e1e8ea;
+    width: 50vw;
+    height: 7rem;
+    border-radius: 6rem;
+    border: none;
+    font-family: "proxima_nova";
+    font-weight: bold;
+    font-size: 2rem;
+    background: linear-gradient(#7083bc, #376c9f, #005683);
+  }
+  .kupuBiru {
+    display:block ;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .kupuBiru {
+    top: -20%;
+    left: -12%;
+    width: 10%;
+  }
+
+  .button_daftar {
+    height: 50vh;
+  }
+  .kupuBiru2 {
+    rotate: -20deg;
+    scale: -1 1;
+    top: -70% !important;
+    right: -5%;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .header p {
+    font-size: 3rem;
+    width: 50%;
+  }
+
+  .judul {
+    font-size: 2.5rem;
+    width: 40%;
+  }
+
+  .button_daftar button {
+    margin: 0px 2rem;
+    color: #e1e8ea;
+    width: 25vw;
+    height: 7rem;
+    border-radius: 6rem;
+    border: none;
+    font-family: "proxima_nova_bold";
+    font-size: 2rem;
+
+    background: linear-gradient(#7083bc, #376c9f, #005683);
+  }
+
+  .kupuBiru {
+    top: -30%;
+    left: -10%;
+    width: 10%;
+  }
+
+  .kupuBiru2 {
+    rotate: -20deg;
+    scale: -1 1;
+    top: -110%;
+    right: -5%;
+  }
+}

@@ -1,0 +1,380 @@
+@font-face {
+  font-family: "Proxima_nova";
+  src: url("../../fonts/Proxima Nova Font.otf");
+}
+@font-face {
+  font-family: "Proxima_nova_bold";
+  src: url("../../fonts/Proxima Nova Bold.otf");
+}
+@font-face {
+  font-family: "Proxima_nova_thin";
+  src: url("../../fonts/Proxima Nova Thin.otf");
+}
+
+h6 {
+  text-align: center;
+  color: #005683;
+  font-size: 1rem;
+  margin-top: 30px;
+  font-family: "Proxima_nova";
+}
+
+.flip_card_inner {
+  perspective: 1000px;
+}
+
+.linimasa_item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 10vh;
+  overflow: hidden;
+  /* margin-top: 50vh; */
+  /* gap:5vh; */
+  /* z-index:3; */
+  background-color: #e1e8ea;
+}
+
+.linimasa_item__controller {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height:100vh; */
+  font: "Proxima_nova";
+  font-weight: 800;
+  font-size: 26px;
+  /* background: linear-gradient(45deg, #6cbdaa, rgb(139, 214, 234)) !important; */
+}
+.linimasa_item__controller > div {
+  padding: 16px 32px;
+}
+.controller__active {
+  text-align: center;
+  color: #005683;
+  border-bottom: 5px solid #005683;
+}
+.controller__unactive {
+  color: #e1e8ea;
+  /* identical to box height */
+  text-shadow: 0 0 2px #005683;
+  text-align: center;
+  border-bottom: 1px solid #005683;
+}
+.linimasa_item__isiItem {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: auto;
+  background-color: #e1e8ea;
+  border-radius: 45px;
+  padding: 50px;
+  z-index: 3;
+  font-family: "Proxima_nova";
+  font-weight: 400;
+  color: #005683;
+}
+.linimasa_item__isiItem h3 {
+  text-align: center;
+  font-weight: 700;
+}
+.linimasa_item__isiItem p {
+  padding: 0 50px;
+}
+.linimasa_item__isiItem hr {
+  background: linear-gradient(to right, #005683, #7083bc) !important;
+  opacity: 100%;
+  height: 3px;
+}
+
+.bgArtBawah {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+@media (min-width: 300px) {
+  .linimasa_item__controller {
+    justify-content: unset;
+    font-size: 13px !important;
+  }
+  .linimasa_item__controller > div {
+    white-space: nowrap;
+  }
+  .linimasa_item__isiItem {
+    padding: 20px !important;
+  }
+  .linimasa_item__isiItem p {
+    padding: 0 20px !important;
+  }
+  .linimasa_item__borderIsi {
+    width: 85vw !important;
+  }
+  .linimasa_item_title {
+    background-image: linear-gradient(to bottom right, #7083bc, #6dbcab);
+    border-radius: 54px;
+    padding: 3px;
+    width: 80%;
+    margin: 1vw auto;
+    margin-top: -4vw;
+  }
+
+  .linimasa_item_title_content {
+    font-family: "Proxima_nova_bold";
+    text-align: center;
+    color: #005683;
+    background-color: #f0f4f5;
+    padding: 2vw;
+    font-size: 3.5vw;
+    border-radius: 54px;
+    margin: auto auto;
+  }
+
+  .awan {
+    position: absolute;
+    width: 35vw;
+    height: auto;
+    z-index: 1;
+    top: 38vh;
+    left: -20px;
+    opacity: 40%;
+  }
+  .bunga {
+    position: absolute;
+    width: 28vw;
+    height: auto;
+    z-index: 1;
+    top: 85vh;
+    right: -10vw;
+    opacity: 40%;
+  }
+
+  .bungakecil {
+    position: absolute;
+    width: 15vw;
+    height: auto;
+    z-index: 1;
+    top: 435vh;
+    left: -28px;
+    opacity: 40%;
+  }
+
+  .bungakecil2 {
+    position: absolute;
+    width: 15vw;
+    height: auto;
+    z-index: 1;
+    top: 335vh;
+    left: -28px;
+    opacity: 40%;
+  }
+
+  .bungakecil3 {
+    position: absolute;
+    width: 15vw;
+    height: auto;
+    z-index: 1;
+    top: 235vh;
+    left: -28px;
+    opacity: 40%;
+  }
+
+  .bungakecil4 {
+    position: absolute;
+    width: 15vw;
+    height: auto;
+    z-index: 1;
+    top: 135vh;
+    left: -28px;
+    opacity: 40%;
+  }
+
+  .bungakecil5 {
+    position: absolute;
+    width: 15vw;
+    height: auto;
+    z-index: 1;
+    top: 180vh;
+    right: -7vw;
+    opacity: 40%;
+  }
+
+  .bungakecil6 {
+    position: absolute;
+    width: 15vw;
+    height: auto;
+    z-index: 1;
+    top: 280vh;
+    right: -7vw;
+    opacity: 40%;
+  }
+  .bungakecil7 {
+    position: absolute;
+    width: 15vw;
+    height: auto;
+    z-index: 1;
+    top: 380vh;
+    right: -7vw;
+    opacity: 40%;
+  }
+  .bungakecil8 {
+    position: absolute;
+    width: 15vw;
+    height: auto;
+    z-index: 1;
+    top: 480vh;
+    right: -7vw;
+    opacity: 40%;
+  }
+}
+
+@media (min-width: 602px) and (max-width: 1199px) {
+  .linimasa_item__controller {
+    font-size: 20px !important;
+  }
+  .linimasa_item__isiItem {
+    padding: 20px !important;
+  }
+  .linimasa_item__isiItem p {
+    padding: 0 20px !important;
+  }
+  .linimasa_item__borderIsi {
+    width: 62vw !important;
+  }
+  .linimasa_item_title {
+    background-image: linear-gradient(to bottom right, #7083bc, #6dbcab);
+    border-radius: 54px;
+    padding: 3px;
+    width: 80%;
+    margin: 1vw auto;
+    margin-top: -4vw;
+  }
+
+  .linimasa_item_title_content {
+    font-family: "Proxima_nova_bold";
+    text-align: center;
+    color: #005683;
+    background-color: #f0f4f5;
+    padding: 1vw;
+    font-size: 3vw;
+    border-radius: 54px;
+    margin: auto auto;
+  }
+
+  .awan {
+    position: absolute;
+    width: 20vw;
+    height: auto;
+    z-index: 1;
+    top: 110vh;
+    left: -20px;
+    opacity: 40%;
+  }
+  .bunga {
+    position: absolute;
+    width: 18vw;
+    height: auto;
+    z-index: 1;
+    top: 120vh;
+    right: -10vw;
+    opacity: 40%;
+  }
+
+  .bungakecil {
+    position: absolute;
+    width: 15vw;
+    height: auto;
+    z-index: 1;
+    top: 435vh;
+    left: -28px;
+    opacity: 40%;
+  }
+
+  .bungakecil2,
+  .bungakecil3,
+  .bungakecil4,
+  .bungakecil5,
+  .bungakecil6,
+  .bungakecil7,
+  .bungakecil8 {
+    display: none;
+  }
+}
+@media (min-width: 1200px) {
+  .linimasa_item__controller {
+    font-size: 18px !important;
+    justify-content: center;
+  }
+  .linimasa_item__isiItem {
+    padding: 50px !important;
+  }
+  .linimasa_item__isiItem p {
+    padding: 0 50px !important;
+  }
+  .linimasa_item__borderIsi {
+    width: 65vw !important;
+  }
+  .linimasa_item_title {
+    background-image: linear-gradient(to bottom right, #7083bc, #6dbcab);
+    border-radius: 90px;
+    padding: 6px;
+    width: 60%;
+    margin: 1vw auto;
+    margin-top: -4vw;
+  }
+
+  h6 {
+    display: none;
+  }
+
+  .awan {
+    position: absolute;
+    width: 20vw;
+    height: auto;
+    z-index: 1;
+    top: 130vh;
+    left: -20px;
+    opacity: 40%;
+  }
+  .bunga {
+    position: absolute;
+    width: 23vw;
+    height: auto;
+    z-index: 1;
+    top: 230vh;
+    right: -10vw;
+    opacity: 40%;
+  }
+
+  .bungakecil {
+    position: absolute;
+    width: 20vw;
+    height: auto;
+    z-index: 1;
+    top: 435vh;
+    left: -20px;
+    opacity: 40%;
+  }
+
+  .bungakecil2,
+  .bungakecil3,
+  .bungakecil4,
+  .bungakecil5,
+  .bungakecil6,
+  .bungakecil7,
+  .bungakecil8 {
+    display: none;
+  }
+
+  .linimasa_item_title_content {
+    font-family: "Proxima_nova_bold";
+    font-size: 2vw;
+    font-weight: bold;
+    text-align: center;
+    color: #005683;
+    padding: 10px;
+    background-color: #f0f4f5;
+    border-radius: 90px;
+    margin: auto auto;
+  }
+}
